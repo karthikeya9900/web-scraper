@@ -119,7 +119,8 @@
 import asyncio
 from playwright.async_api import async_playwright
 
-URL = "https://cricclubs.com/LionsSchools/results/qwfNdZ_0F-BfrvS39oKrCQ?tab=ball_by_ball"
+# URL = "https://cricclubs.com/LionsSchools/results/qwfNdZ_0F-BfrvS39oKrCQ?tab=ball_by_ball"
+URL = "https://cricclubs.com/LionsSchools/results/spa57Bk3BkEDPo9jIEdSLQ?tab=ball_by_ball"
 
 
 async def auto_scroll(page):
