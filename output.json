@@ -3,80 +3,158 @@
     "match": "U12 Gauteng North TWO vs U12 Gauteng East ONE",
     "league": "Lions School League 2026"
   },
-  "toss": null,
-  "teams": ["U12 Gauteng East ONE", "U12 Gauteng North TWO"],
+  "toss": {
+    "winner": "Gauteng East ONE",
+    "decision": "field"
+  },
+  "teams": [
+    "U12 Gauteng East ONE",
+    "U12 Gauteng North TWO"
+  ],
   "player_registry": {
     "jordan_de_smidt": {
       "full_name": "Jordan De Smidt",
-      "aliases": ["J. De Smidt", "JDS", "Jordan De Smidt"]
+      "aliases": [
+        "Jordan De Smidt",
+        "JDS",
+        "J. De Smidt"
+      ]
     },
     "arshavin_rampersad": {
       "full_name": "Arshavin Rampersad",
-      "aliases": ["Arshavin Rampersad", "A. Rampersad", "AR"]
+      "aliases": [
+        "A. Rampersad",
+        "Arshavin Rampersad",
+        "AR"
+      ]
     },
     "frederik_du_plessis": {
       "full_name": "Frederik Du Plessis",
-      "aliases": ["F. Du Plessis", "Frederik Du Plessis", "FDP"]
+      "aliases": [
+        "FDP",
+        "Frederik Du Plessis",
+        "F. Du Plessis"
+      ]
     },
     "simeon_kleynhans": {
       "full_name": "Simeon Kleynhans",
-      "aliases": ["SK", "S. Kleynhans", "Simeon Kleynhans"]
+      "aliases": [
+        "Simeon Kleynhans",
+        "S. Kleynhans",
+        "SK"
+      ]
     },
     "tyler_mncube": {
       "full_name": "Tyler Mncube",
-      "aliases": ["TM", "Tyler Mncube", "T. Mncube"]
+      "aliases": [
+        "T. Mncube",
+        "TM",
+        "Tyler Mncube"
+      ]
     },
     "thomas_brevis": {
       "full_name": "Thomas Brevis",
-      "aliases": ["TB", "T. Brevis", "Thomas Brevis"]
+      "aliases": [
+        "T. Brevis",
+        "TB",
+        "Thomas Brevis"
+      ]
     },
     "ulrich_van_der_merwe": {
       "full_name": "Ulrich Van Der Merwe",
-      "aliases": ["U. Van Der Merwe", "UVDM", "Ulrich Van Der Merwe"]
+      "aliases": [
+        "UVDM",
+        "Ulrich Van Der Merwe",
+        "U. Van Der Merwe"
+      ]
     },
     "qhayiya_poswa": {
       "full_name": "Qhayiya Poswa",
-      "aliases": ["Qhayiya Poswa", "QP", "Q. Poswa"]
+      "aliases": [
+        "Qhayiya Poswa",
+        "QP",
+        "Q. Poswa"
+      ]
     },
     "bhavish_saini": {
       "full_name": "Bhavish Saini",
-      "aliases": ["BS", "Bhavish Saini", "B. Saini"]
+      "aliases": [
+        "Bhavish Saini",
+        "BS",
+        "B. Saini"
+      ]
     },
     "derick_nelson": {
       "full_name": "Derick Nelson",
-      "aliases": ["Derick Nelson", "D. Nelson", "DN"]
+      "aliases": [
+        "DN",
+        "Derick Nelson",
+        "D. Nelson"
+      ]
     },
     "sean_rowles": {
       "full_name": "Sean Rowles",
-      "aliases": ["Sean Rowles", "SR", "S. Rowles"]
+      "aliases": [
+        "SR",
+        "Sean Rowles",
+        "S. Rowles"
+      ]
     },
     "caleb_allan": {
       "full_name": "Caleb Allan",
-      "aliases": ["C. Allan", "Caleb Allan", "CA"]
+      "aliases": [
+        "CA",
+        "Caleb Allan",
+        "C. Allan"
+      ]
     },
     "sri_sadineni": {
       "full_name": "Sri Sadineni",
-      "aliases": ["S. Sadineni", "SS", "Sri Sadineni"]
+      "aliases": [
+        "SS",
+        "S. Sadineni",
+        "Sri Sadineni"
+      ]
     },
     "hamzah_akabor": {
       "full_name": "Hamzah Akabor",
-      "aliases": ["H. Akabor", "HA", "Hamzah Akabor"]
+      "aliases": [
+        "HA",
+        "H. Akabor",
+        "Hamzah Akabor"
+      ]
     },
     "ethan_matjekane": {
       "full_name": "Ethan Matjekane",
-      "aliases": ["Ethan Matjekane", "E. Matjekane", "EM"]
+      "aliases": [
+        "EM",
+        "Ethan Matjekane",
+        "E. Matjekane"
+      ]
     },
     "ezra_pillay": {
       "full_name": "Ezra Pillay",
-      "aliases": ["Ezra Pillay", "EP", "E. Pillay"]
+      "aliases": [
+        "E. Pillay",
+        "EP",
+        "Ezra Pillay"
+      ]
     },
     "santiago_palaciosflusk": {
       "full_name": "Santiago PalaciosFlusk",
-      "aliases": ["SP", "Santiago PalaciosFlusk", "S. PalaciosFlusk"]
+      "aliases": [
+        "S. PalaciosFlusk",
+        "Santiago PalaciosFlusk",
+        "SP"
+      ]
     },
     "chaitu_a": {
       "full_name": "Chaitu A",
-      "aliases": ["CA", "C. A", "Chaitu A"]
+      "aliases": [
+        "CA",
+        "C. A",
+        "Chaitu A"
+      ]
     }
   },
   "innings": [

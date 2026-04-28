@@ -676,25 +676,31 @@ def extract_match_meta(soup):
 def extract_toss_info(soup):
     text = soup.get_text(" ", strip=True)
 
-    match = re.search(
-        r'([A-Za-z0-9\s]+) won the toss and elected to (bat|field|bowl)',
-        text,
-        re.IGNORECASE
-    )
+    patterns = [
+        r'([A-Za-z\s]+?)\s+won the toss and elected to\s+(bat|field|bowl)',
+        r'([A-Za-z\s]+?)\s+won the toss and chose to\s+(bat|field|bowl)',
+        r'([A-Za-z\s]+?)\s+won the toss and opted to\s+(bat|field|bowl)'
+    ]
 
-    if not match:
-        return None
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            winner = clean(match.group(1))
+            decision = match.group(2).lower()
 
-    decision = match.group(2).lower()
-    if decision == "bowl":
-        decision = "field"
+            # 🔥 CLEAN JUNK FROM WINNER
+            winner = re.sub(r'\b\d+\s*(AM|PM)?\b', '', winner, flags=re.IGNORECASE)
+            winner = clean(winner)
 
-    return {
-        "winner": clean(match.group(1)),
-        "decision": decision
-    }
+            if decision == "bowl":
+                decision = "field"
 
+            return {
+                "winner": winner,
+                "decision": decision
+            }
 
+    return None
 # =========================================================
 # PLAYER REGISTRY
 # =========================================================
@@ -916,24 +922,44 @@ def generate_match_json(files, output_file=None):
         "innings_raw": []
     }
 
-    for idx, file_path in enumerate(files):
+    # =========================================================
+    # PASS 1 → Scan ALL files for meta, registry, toss
+    # =========================================================
+    for file_path in files:
+        print(f"🔍 Scanning {file_path}")
+
         with open(file_path, "r", encoding="utf-8") as f:
             soup = BeautifulSoup(f, "html.parser")
 
-        if idx == 0:
+        # meta (only once)
+        if not match_context["meta"]:
             match_context["meta"] = extract_match_meta(soup)
+
+        # registry (only once)
+        if not match_context["player_registry"]:
             match_context["player_registry"] = extract_player_registry(soup)
 
+        # 🔥 IMPORTANT: check toss in EVERY file
         if match_context["toss"] is None:
-            match_context["toss"] = extract_toss_info(soup)
+            toss = extract_toss_info(soup)
+            if toss:
+                print(f"✅ Toss found in {file_path}: {toss}")
+                match_context["toss"] = toss
 
+    # =========================================================
+    # PASS 2 → Parse innings
+    # =========================================================
+    for file_path in files:
         innings = parse_html(file_path, match_context["player_registry"])
         match_context["teams"].add(innings["team"])
         match_context["innings_raw"].append(innings)
 
     result = {
         "meta": match_context["meta"],
-        "toss": match_context["toss"],
+        "toss": match_context["toss"] or {
+            "winner": "Unknown",
+            "decision": "Unknown"
+        },
         "teams": list(match_context["teams"]),
         "player_registry": sanitize_registry(match_context["player_registry"]),
         "innings": order_innings(match_context["innings_raw"], match_context["toss"])
@@ -944,7 +970,6 @@ def generate_match_json(files, output_file=None):
             json.dump(result, f, indent=2)
 
     return result
-
 
 # =========================================================
 # CLI RUN (OPTIONAL)
