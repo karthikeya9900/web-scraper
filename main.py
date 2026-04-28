@@ -6,6 +6,7 @@ URL = "https://cricclubs.com/LionsSchools/results/qwfNdZ_0F-BfrvS39oKrCQ?tab=bal
 
 async def main():
     files = await webScraper.scrape_match(URL)
+    print(files)
 
     parseDataToJSON.generate_match_json(files, "output.json")
 
