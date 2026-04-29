@@ -26,6 +26,7 @@ def match_team(toss_winner, teams):
 
     return best_match if best_score > 0 else None
 
+
 def normalize_team(name):
     if not name:
         return ""
@@ -45,6 +46,7 @@ def normalize_team(name):
     name = re.sub(r'\s+', ' ', name).strip()
 
     return name
+
 
 def clean(text):
     return re.sub(r'\s+', ' ', text).strip()
@@ -81,6 +83,71 @@ def empty_extras():
 # =========================================================
 # WICKET + FIELDERS
 # =========================================================
+
+def parse_dismissal(full_text, batter_name):
+
+    text = full_text
+
+    # remove score tail (after runs)
+    text = re.split(r'\d+\s*\(', text)[0]
+
+    # normalize
+    text = clean(text)
+
+    # ---------------- CAUGHT ----------------
+    m = re.search(r'^([A-Za-z\s\.]+?)\s+c\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', text)
+    if m:
+        return {
+            "kind": "caught",
+            "player_out": clean(m.group(1)),
+            "fielders": [clean(m.group(2))],
+            "bowler": clean(m.group(3))
+        }
+
+    # ---------------- STUMPED ----------------
+    m = re.search(r'^([A-Za-z\s\.]+?)\s+st\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', text, re.IGNORECASE)
+    if m:
+        return {
+            "kind": "stumped",
+            "player_out": clean(m.group(1)),
+            "fielders": [clean(m.group(2))],
+            "bowler": clean(m.group(3))
+        }
+
+    # ---------------- RUN OUT ----------------
+    m = re.search(r'^([A-Za-z\s\.]+?)\s+run out\s*\(([^)]+)\)', text, re.IGNORECASE)
+    if m:
+        fielders = [clean(x) for x in m.group(2).split("/")]
+        return {
+            "kind": "run out",
+            "player_out": clean(m.group(1)),
+            "fielders": fielders
+        }
+
+    # ---------------- LBW ----------------
+    m = re.search(r'^([A-Za-z\s\.]+?)\s+lbw\s+b\s+([A-Za-z\s\.]+)', text, re.IGNORECASE)
+    if m:
+        return {
+            "kind": "lbw",
+            "player_out": clean(m.group(1)),
+            "bowler": clean(m.group(2))
+        }
+
+    # ---------------- BOWLED ----------------
+    m = re.search(r'^([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', text)
+    if m:
+        return {
+            "kind": "bowled",
+            "player_out": clean(m.group(1)),
+            "bowler": clean(m.group(2))
+        }
+
+    # ---------------- FALLBACK ----------------
+    return {
+        "kind": "unknown",
+        "player_out": batter_name
+    }
+
 
 def detect_wicket_type(text):
     t = text.lower()
@@ -202,6 +269,7 @@ def extract_toss_info(soup):
             }
 
     return None
+
 # =========================================================
 # PLAYER REGISTRY
 # =========================================================
@@ -320,45 +388,100 @@ def extract_players(text):
 # =========================================================
 
 def parse_event(full_text, batter_name, is_wicket):
-    t = full_text.lower()
+
+    # ---------------- COMMENTARY ONLY ----------------
+    parts = full_text.split(",", 1)
+    t = parts[1].lower() if len(parts) > 1 else full_text.lower()
 
     runs = {"batter": 0, "extras": 0, "total": 0}
     extras = empty_extras()
     wickets = []
 
+    # ---------------- WICKET ----------------
     if is_wicket:
+        kind = detect_wicket_type(t)
+
+        out_match = re.search(r'^([A-Za-z\s\.]+?)\s+(c|b|lbw|run out|st)', full_text)
+        player_out = clean(out_match.group(1)) if out_match else batter_name
+
         wickets.append({
-            "kind": detect_wicket_type(t),
-            "player_out": batter_name,
+            "kind": kind,
+            "player_out": player_out,
             "fielders": extract_fielders(full_text)
         })
 
+        if kind != "run out":
+            return runs, extras, wickets, True
+
+    # ---------------- RUN EXTRACTION ----------------
+    run_matches = re.findall(r'(\d+)\s*(?:run|runs)', t)
+    run_values = [int(n) for n in run_matches]
+
+    if run_values:
+        base_runs = sum(run_values)
+    else:
+        fallback = re.findall(r'\b\d+\b', t)
+        base_runs = int(fallback[0]) if fallback else 0
+
+    # ---------------- WIDE ----------------
     if "wide" in t:
-        extras["wides"] = 1
-        runs["extras"] = 1
-        runs["total"] = 1
+        run_matches = re.findall(r'(\d+)\s*wides?', t)
+
+        if run_matches:
+            total = int(run_matches[0])
+        else:
+            total = 1  # default ICC rule
+
+        extras["wides"] = total
+        runs["extras"] = total
+        runs["total"] = total
+
         return runs, extras, wickets, False
 
+    # ---------------- NO BALL ----------------
     if "no ball" in t:
         extras["noballs"] = 1
-        runs["extras"] = 1
-        runs["total"] = 1
-        return runs, extras, wickets, False
 
-    if "four" in t:
-        runs["batter"] = 4
-    elif "six" in t:
-        runs["batter"] = 6
-    else:
-        nums = re.findall(r'\d+', full_text)
-        if nums:
-            runs["batter"] = int(nums[0])
+        if "leg bye" in t:
+            extras["legbyes"] = base_runs
+            runs["extras"] = 1 + base_runs
 
-    runs["total"] = runs["batter"]
+        elif re.search(r'\bbye\b', t):
+            extras["byes"] = base_runs
+            runs["extras"] = 1 + base_runs
+
+        else:
+            runs["batter"] = base_runs
+            runs["extras"] = 1
+
+        runs["total"] = runs["batter"] + runs["extras"]
+        return runs, extras, wickets, True
+
+    # ---------------- LEG BYE ----------------
+    if "leg bye" in t:
+        extras["legbyes"] = base_runs if base_runs else 1
+
+        runs["batter"] = 0
+        runs["extras"] = extras["legbyes"]
+        runs["total"] = runs["extras"]
+
+        return runs, extras, wickets, True
+
+    # ---------------- BYE ----------------
+    if re.search(r'\bbye\b', t):
+        extras["byes"] = base_runs if base_runs else 1
+
+        runs["batter"] = 0
+        runs["extras"] = extras["byes"]
+        runs["total"] = runs["extras"]
+
+        return runs, extras, wickets, True
+
+    # ---------------- NORMAL RUNS ----------------
+    runs["batter"] = base_runs
+    runs["total"] = base_runs
 
     return runs, extras, wickets, True
-
-
 # =========================================================
 # HTML PARSER
 # =========================================================

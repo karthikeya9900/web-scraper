@@ -39,48 +39,48 @@
     "simeon_kleynhans": {
       "full_name": "Simeon Kleynhans",
       "aliases": [
-        "S. Kleynhans",
         "Simeon Kleynhans",
+        "S. Kleynhans",
         "SK"
       ]
     },
     "tyler_mncube": {
       "full_name": "Tyler Mncube",
       "aliases": [
-        "Tyler Mncube",
+        "T. Mncube",
         "TM",
-        "T. Mncube"
+        "Tyler Mncube"
       ]
     },
     "thomas_brevis": {
       "full_name": "Thomas Brevis",
       "aliases": [
         "TB",
-        "Thomas Brevis",
-        "T. Brevis"
+        "T. Brevis",
+        "Thomas Brevis"
       ]
     },
     "ulrich_van_der_merwe": {
       "full_name": "Ulrich Van Der Merwe",
       "aliases": [
-        "UVDM",
         "Ulrich Van Der Merwe",
-        "U. Van Der Merwe"
+        "U. Van Der Merwe",
+        "UVDM"
       ]
     },
     "qhayiya_poswa": {
       "full_name": "Qhayiya Poswa",
       "aliases": [
-        "Qhayiya Poswa",
+        "QP",
         "Q. Poswa",
-        "QP"
+        "Qhayiya Poswa"
       ]
     },
     "bhavish_saini": {
       "full_name": "Bhavish Saini",
       "aliases": [
-        "Bhavish Saini",
         "B. Saini",
+        "Bhavish Saini",
         "BS"
       ]
     },
@@ -88,40 +88,40 @@
       "full_name": "Derick Nelson",
       "aliases": [
         "D. Nelson",
-        "Derick Nelson",
-        "DN"
+        "DN",
+        "Derick Nelson"
       ]
     },
     "sean_rowles": {
       "full_name": "Sean Rowles",
       "aliases": [
+        "S. Rowles",
         "SR",
-        "Sean Rowles",
-        "S. Rowles"
+        "Sean Rowles"
       ]
     },
     "caleb_allan": {
       "full_name": "Caleb Allan",
       "aliases": [
-        "CA",
         "Caleb Allan",
-        "C. Allan"
+        "C. Allan",
+        "CA"
       ]
     },
     "sri_sadineni": {
       "full_name": "Sri Sadineni",
       "aliases": [
+        "SS",
         "S. Sadineni",
-        "Sri Sadineni",
-        "SS"
+        "Sri Sadineni"
       ]
     },
     "hamzah_akabor": {
       "full_name": "Hamzah Akabor",
       "aliases": [
+        "HA",
         "Hamzah Akabor",
-        "H. Akabor",
-        "HA"
+        "H. Akabor"
       ]
     },
     "ethan_matjekane": {
@@ -143,17 +143,17 @@
     "santiago_palaciosflusk": {
       "full_name": "Santiago PalaciosFlusk",
       "aliases": [
-        "Santiago PalaciosFlusk",
         "SP",
+        "Santiago PalaciosFlusk",
         "S. PalaciosFlusk"
       ]
     },
     "chaitu_a": {
       "full_name": "Chaitu A",
       "aliases": [
-        "C. A",
         "CA",
-        "Chaitu A"
+        "Chaitu A",
+        "C. A"
       ]
     }
   },
@@ -691,9 +691,15 @@
               "bowler": "Sri S",
               "non_striker": "Bion M",
               "runs": {
-                "batter": 1,
-                "extras": 0,
+                "batter": 0,
+                "extras": 1,
                 "total": 1
+              },
+              "extras": {
+                "wides": 0,
+                "byes": 0,
+                "legbyes": 1,
+                "noballs": 0
               }
             },
             {
@@ -861,13 +867,13 @@
               "bowler": "Ezra P",
               "non_striker": "Simeon K",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Bion M",
                   "fielders": "Jordan D"
                 }
@@ -1005,13 +1011,13 @@
               "bowler": "Ezra P",
               "non_striker": "Simeon K",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "bowled",
+                  "kind": "unknown",
                   "player_out": "Thomas B",
                   "fielders": null
                 }
@@ -1576,11 +1582,11 @@
               "non_striker": "Simeon K",
               "runs": {
                 "batter": 0,
-                "extras": 1,
-                "total": 1
+                "extras": 2,
+                "total": 2
               },
               "extras": {
-                "wides": 1,
+                "wides": 2,
                 "byes": 0,
                 "legbyes": 0,
                 "noballs": 0
@@ -2192,11 +2198,11 @@
               "non_striker": "Karel J",
               "runs": {
                 "batter": 0,
-                "extras": 1,
-                "total": 1
+                "extras": 2,
+                "total": 2
               },
               "extras": {
-                "wides": 1,
+                "wides": 2,
                 "byes": 0,
                 "legbyes": 0,
                 "noballs": 0
@@ -2505,9 +2511,15 @@
               "bowler": "Jordan D",
               "non_striker": "Karel J",
               "runs": {
-                "batter": 1,
-                "extras": 0,
+                "batter": 0,
+                "extras": 1,
                 "total": 1
+              },
+              "extras": {
+                "wides": 0,
+                "byes": 1,
+                "legbyes": 0,
+                "noballs": 0
               }
             },
             {
@@ -2692,11 +2704,11 @@
               "non_striker": "Simeon K",
               "runs": {
                 "batter": 0,
-                "extras": 1,
-                "total": 1
+                "extras": 2,
+                "total": 2
               },
               "extras": {
-                "wides": 1,
+                "wides": 2,
                 "byes": 0,
                 "legbyes": 0,
                 "noballs": 0
@@ -2900,9 +2912,15 @@
               "bowler": "Santiago P",
               "non_striker": "Karel J",
               "runs": {
-                "batter": 2,
-                "extras": 0,
+                "batter": 0,
+                "extras": 2,
                 "total": 2
+              },
+              "extras": {
+                "wides": 0,
+                "byes": 2,
+                "legbyes": 0,
+                "noballs": 0
               }
             },
             {
@@ -3349,13 +3367,13 @@
               "bowler": "Sean R",
               "non_striker": "Karel J",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "run out",
+                  "kind": "unknown",
                   "player_out": "Simeon K",
                   "fielders": "Sean R/Chaitu A"
                 }
@@ -3614,13 +3632,13 @@
               "bowler": "Sri S",
               "non_striker": "Karel J",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "bowled",
+                  "kind": "unknown",
                   "player_out": "Aidan H",
                   "fielders": null
                 }
@@ -3659,13 +3677,13 @@
               "bowler": "Sean R",
               "non_striker": "Bhavish S",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "lbw",
+                  "kind": "unknown",
                   "player_out": "Karel J",
                   "fielders": null
                 }
@@ -3907,13 +3925,13 @@
               "bowler": "Ty P",
               "non_striker": "Bhavish S",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Derick N",
                   "fielders": "Sean R"
                 }
@@ -3925,13 +3943,13 @@
               "bowler": "Ty P",
               "non_striker": "Bhavish S",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "run out",
+                  "kind": "unknown",
                   "player_out": "Tyler M",
                   "fielders": "Ty P"
                 }
@@ -4134,13 +4152,13 @@
               "bowler": "Sri S",
               "non_striker": "Tyler M",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "bowled",
+                  "kind": "unknown",
                   "player_out": "Nkululeko Y",
                   "fielders": null
                 }
@@ -4970,11 +4988,11 @@
               "non_striker": "Jordan D",
               "runs": {
                 "batter": 0,
-                "extras": 1,
-                "total": 1
+                "extras": 2,
+                "total": 2
               },
               "extras": {
-                "wides": 1,
+                "wides": 2,
                 "byes": 0,
                 "legbyes": 0,
                 "noballs": 0
@@ -5580,13 +5598,13 @@
               "bowler": "Ulrich V",
               "non_striker": "Jordan D",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "bowled",
+                  "kind": "unknown",
                   "player_out": "Arshavin R",
                   "fielders": null
                 }
@@ -6645,13 +6663,13 @@
               "bowler": "Thomas B",
               "non_striker": "Qhayiya P",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Jordan D",
                   "fielders": "Derick N"
                 }
@@ -6833,13 +6851,13 @@
               "bowler": "Thomas B",
               "non_striker": "Sean R",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Qhayiya P",
                   "fielders": "Simeon K"
                 }
@@ -6900,13 +6918,13 @@
               "bowler": "Frederik D",
               "non_striker": "Sean R",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "bowled",
+                  "kind": "unknown",
                   "player_out": "Caleb A",
                   "fielders": null
                 }
@@ -6945,9 +6963,15 @@
               "bowler": "Thomas B",
               "non_striker": "Sri S",
               "runs": {
-                "batter": 4,
-                "extras": 0,
-                "total": 4
+                "batter": 0,
+                "extras": 1,
+                "total": 1
+              },
+              "extras": {
+                "wides": 0,
+                "byes": 1,
+                "legbyes": 0,
+                "noballs": 0
               },
               "wickets": [
                 {
@@ -6961,7 +6985,7 @@
               "ball": "33.3",
               "batter": "Hamzah A",
               "bowler": "Thomas B",
-              "non_striker": "Sri S",
+              "non_striker": "Sean R",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6972,7 +6996,7 @@
               "ball": "33.4",
               "batter": "Hamzah A",
               "bowler": "Thomas B",
-              "non_striker": "Sri S",
+              "non_striker": "Sean R",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6983,7 +7007,7 @@
               "ball": "33.5",
               "batter": "Hamzah A",
               "bowler": "Thomas B",
-              "non_striker": "Sri S",
+              "non_striker": "Sean R",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6994,7 +7018,7 @@
               "ball": "33.6",
               "batter": "Hamzah A",
               "bowler": "Thomas B",
-              "non_striker": "Sri S",
+              "non_striker": "Sean R",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7556,13 +7580,13 @@
               "bowler": "Ulrich V",
               "non_striker": "Hamzah A",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Sri S",
                   "fielders": "Lesedi M"
                 }
@@ -7629,13 +7653,13 @@
               "bowler": "Bhavish S",
               "non_striker": "Hamzah A",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "stumped",
+                  "kind": "unknown",
                   "player_out": "Ethan M",
                   "fielders": null
                 }
@@ -7735,13 +7759,13 @@
               "bowler": "Ulrich V",
               "non_striker": "Hamzah A",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Ezra P",
                   "fielders": "Derick N"
                 }
@@ -7862,13 +7886,13 @@
               "bowler": "Ulrich V",
               "non_striker": "Santiago P",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Hamzah A",
                   "fielders": "Thomas B"
                 }
@@ -7891,13 +7915,13 @@
               "bowler": "Ulrich V",
               "non_striker": "Santiago P",
               "runs": {
-                "batter": 4,
+                "batter": 0,
                 "extras": 0,
-                "total": 4
+                "total": 0
               },
               "wickets": [
                 {
-                  "kind": "catch",
+                  "kind": "unknown",
                   "player_out": "Chaitu A",
                   "fielders": "Frederik D"
                 }
