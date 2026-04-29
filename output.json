@@ -8,8 +8,8 @@
     "decision": "field"
   },
   "teams": [
-    "U12 Gauteng East ONE",
-    "U12 Gauteng North TWO"
+    "U12 Gauteng North TWO",
+    "U12 Gauteng East ONE"
   ],
   "player_registry": {
     "jordan_de_smidt": {
@@ -23,17 +23,17 @@
     "arshavin_rampersad": {
       "full_name": "Arshavin Rampersad",
       "aliases": [
-        "A. Rampersad",
+        "Arshavin Rampersad",
         "AR",
-        "Arshavin Rampersad"
+        "A. Rampersad"
       ]
     },
     "frederik_du_plessis": {
       "full_name": "Frederik Du Plessis",
       "aliases": [
+        "F. Du Plessis",
         "FDP",
-        "Frederik Du Plessis",
-        "F. Du Plessis"
+        "Frederik Du Plessis"
       ]
     },
     "simeon_kleynhans": {
@@ -47,56 +47,56 @@
     "tyler_mncube": {
       "full_name": "Tyler Mncube",
       "aliases": [
-        "T. Mncube",
         "Tyler Mncube",
+        "T. Mncube",
         "TM"
       ]
     },
     "thomas_brevis": {
       "full_name": "Thomas Brevis",
       "aliases": [
-        "TB",
         "T. Brevis",
+        "TB",
         "Thomas Brevis"
       ]
     },
     "ulrich_van_der_merwe": {
       "full_name": "Ulrich Van Der Merwe",
       "aliases": [
-        "U. Van Der Merwe",
         "UVDM",
-        "Ulrich Van Der Merwe"
+        "Ulrich Van Der Merwe",
+        "U. Van Der Merwe"
       ]
     },
     "qhayiya_poswa": {
       "full_name": "Qhayiya Poswa",
       "aliases": [
         "QP",
-        "Q. Poswa",
-        "Qhayiya Poswa"
+        "Qhayiya Poswa",
+        "Q. Poswa"
       ]
     },
     "bhavish_saini": {
       "full_name": "Bhavish Saini",
       "aliases": [
         "B. Saini",
-        "Bhavish Saini",
-        "BS"
+        "BS",
+        "Bhavish Saini"
       ]
     },
     "derick_nelson": {
       "full_name": "Derick Nelson",
       "aliases": [
-        "Derick Nelson",
         "DN",
+        "Derick Nelson",
         "D. Nelson"
       ]
     },
     "sean_rowles": {
       "full_name": "Sean Rowles",
       "aliases": [
-        "S. Rowles",
         "SR",
+        "S. Rowles",
         "Sean Rowles"
       ]
     },
@@ -111,16 +111,16 @@
     "sri_sadineni": {
       "full_name": "Sri Sadineni",
       "aliases": [
+        "Sri Sadineni",
         "S. Sadineni",
-        "SS",
-        "Sri Sadineni"
+        "SS"
       ]
     },
     "hamzah_akabor": {
       "full_name": "Hamzah Akabor",
       "aliases": [
-        "Hamzah Akabor",
         "H. Akabor",
+        "Hamzah Akabor",
         "HA"
       ]
     },
@@ -128,8 +128,8 @@
       "full_name": "Ethan Matjekane",
       "aliases": [
         "Ethan Matjekane",
-        "EM",
-        "E. Matjekane"
+        "E. Matjekane",
+        "EM"
       ]
     },
     "ezra_pillay": {
@@ -151,9 +151,9 @@
     "chaitu_a": {
       "full_name": "Chaitu A",
       "aliases": [
-        "Chaitu A",
         "C. A",
-        "CA"
+        "CA",
+        "Chaitu A"
       ]
     }
   },
@@ -3376,8 +3376,12 @@
               },
               "wickets": [
                 {
-                  "kind": "unknown",
-                  "player_out": "Simeon Kleynhans"
+                  "kind": "run out",
+                  "player_out": "Simeon Kleynhans",
+                  "fielders": [
+                    "Sean R",
+                    "Chaitu A"
+                  ]
                 }
               ]
             },
@@ -3954,8 +3958,11 @@
               },
               "wickets": [
                 {
-                  "kind": "unknown",
-                  "player_out": "Bhavish Saini"
+                  "kind": "run out",
+                  "player_out": "Bhavish Saini",
+                  "fielders": [
+                    "Ty P"
+                  ]
                 }
               ]
             },
@@ -6969,26 +6976,35 @@
             },
             {
               "ball": "33.2",
-              "batter": "Sri Sadineni",
+              "batter": "Arshavin Rampersad",
               "bowler": "Thomas Brevis",
               "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
-                "extras": 0,
-                "total": 0
+                "extras": 1,
+                "total": 1
+              },
+              "extras": {
+                "wides": 0,
+                "byes": 1,
+                "legbyes": 0,
+                "noballs": 0
               },
               "wickets": [
                 {
-                  "kind": "unknown",
-                  "player_out": "Arshavin Rampersad"
+                  "kind": "run out",
+                  "player_out": "Sean Rowles",
+                  "fielders": [
+                    "Tyler M"
+                  ]
                 }
               ]
             },
             {
               "ball": "33.3",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6997,9 +7013,9 @@
             },
             {
               "ball": "33.4",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7008,9 +7024,9 @@
             },
             {
               "ball": "33.5",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7019,9 +7035,9 @@
             },
             {
               "ball": "33.6",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7035,9 +7051,9 @@
           "deliveries": [
             {
               "ball": "34.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7046,9 +7062,9 @@
             },
             {
               "ball": "34.2",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7057,9 +7073,9 @@
             },
             {
               "ball": "34.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7068,9 +7084,9 @@
             },
             {
               "ball": "34.4",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7079,9 +7095,9 @@
             },
             {
               "ball": "34.5",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7090,9 +7106,9 @@
             },
             {
               "ball": "34.6",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7106,9 +7122,9 @@
           "deliveries": [
             {
               "ball": "35.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Thomas Brevis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7123,9 +7139,9 @@
             },
             {
               "ball": "35.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Thomas Brevis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7134,9 +7150,9 @@
             },
             {
               "ball": "35.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Thomas Brevis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7145,9 +7161,9 @@
             },
             {
               "ball": "35.3",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7156,9 +7172,9 @@
             },
             {
               "ball": "35.4",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7167,9 +7183,9 @@
             },
             {
               "ball": "35.5",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7178,9 +7194,9 @@
             },
             {
               "ball": "35.6",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7195,9 +7211,9 @@
             },
             {
               "ball": "35.6",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7211,9 +7227,9 @@
           "deliveries": [
             {
               "ball": "36.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7222,9 +7238,9 @@
             },
             {
               "ball": "36.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7233,9 +7249,9 @@
             },
             {
               "ball": "36.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7244,9 +7260,9 @@
             },
             {
               "ball": "36.4",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7255,9 +7271,9 @@
             },
             {
               "ball": "36.5",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7266,9 +7282,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7283,9 +7299,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7300,9 +7316,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7316,9 +7332,9 @@
           "deliveries": [
             {
               "ball": "37.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7327,9 +7343,9 @@
             },
             {
               "ball": "37.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7338,9 +7354,9 @@
             },
             {
               "ball": "37.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7349,9 +7365,9 @@
             },
             {
               "ball": "37.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7360,9 +7376,9 @@
             },
             {
               "ball": "37.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7371,9 +7387,9 @@
             },
             {
               "ball": "37.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7388,9 +7404,9 @@
             },
             {
               "ball": "37.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7404,9 +7420,9 @@
           "deliveries": [
             {
               "ball": "38.1",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7415,9 +7431,9 @@
             },
             {
               "ball": "38.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7426,9 +7442,9 @@
             },
             {
               "ball": "38.3",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7437,9 +7453,9 @@
             },
             {
               "ball": "38.4",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7448,9 +7464,9 @@
             },
             {
               "ball": "38.5",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7459,9 +7475,9 @@
             },
             {
               "ball": "38.6",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7475,18 +7491,7 @@
           "deliveries": [
             {
               "ball": "39.1",
-              "batter": "Qhayiya Poswa",
-              "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
-              "runs": {
-                "batter": 1,
-                "extras": 0,
-                "total": 1
-              }
-            },
-            {
-              "ball": "39.2",
-              "batter": "Sri Sadineni",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
               "non_striker": "Qhayiya Poswa",
               "runs": {
@@ -7496,10 +7501,21 @@
               }
             },
             {
-              "ball": "39.3",
+              "ball": "39.2",
               "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Arshavin Rampersad",
+              "runs": {
+                "batter": 1,
+                "extras": 0,
+                "total": 1
+              }
+            },
+            {
+              "ball": "39.3",
+              "batter": "Arshavin Rampersad",
+              "bowler": "Bhavish Saini",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7508,9 +7524,9 @@
             },
             {
               "ball": "39.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7519,9 +7535,9 @@
             },
             {
               "ball": "39.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7530,9 +7546,9 @@
             },
             {
               "ball": "39.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7546,9 +7562,9 @@
           "deliveries": [
             {
               "ball": "40.1",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7557,9 +7573,9 @@
             },
             {
               "ball": "40.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7568,9 +7584,9 @@
             },
             {
               "ball": "40.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7579,9 +7595,9 @@
             },
             {
               "ball": "40.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7600,9 +7616,9 @@
             },
             {
               "ball": "40.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7611,9 +7627,9 @@
             },
             {
               "ball": "40.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7628,9 +7644,9 @@
             },
             {
               "ball": "40.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7644,9 +7660,9 @@
           "deliveries": [
             {
               "ball": "41.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7655,9 +7671,9 @@
             },
             {
               "ball": "41.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7676,9 +7692,9 @@
             },
             {
               "ball": "41.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7693,9 +7709,9 @@
             },
             {
               "ball": "41.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7704,9 +7720,9 @@
             },
             {
               "ball": "41.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7715,9 +7731,9 @@
             },
             {
               "ball": "41.5",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7726,9 +7742,9 @@
             },
             {
               "ball": "41.6",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7742,9 +7758,9 @@
           "deliveries": [
             {
               "ball": "42.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7753,9 +7769,9 @@
             },
             {
               "ball": "42.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7764,9 +7780,9 @@
             },
             {
               "ball": "42.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7785,18 +7801,7 @@
             },
             {
               "ball": "42.4",
-              "batter": "Qhayiya Poswa",
-              "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
-              "runs": {
-                "batter": 1,
-                "extras": 0,
-                "total": 1
-              }
-            },
-            {
-              "ball": "42.5",
-              "batter": "Sri Sadineni",
+              "batter": "Arshavin Rampersad",
               "bowler": "Ulrich Van Der Merwe",
               "non_striker": "Qhayiya Poswa",
               "runs": {
@@ -7806,10 +7811,21 @@
               }
             },
             {
-              "ball": "42.6",
+              "ball": "42.5",
               "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Arshavin Rampersad",
+              "runs": {
+                "batter": 1,
+                "extras": 0,
+                "total": 1
+              }
+            },
+            {
+              "ball": "42.6",
+              "batter": "Arshavin Rampersad",
+              "bowler": "Ulrich Van Der Merwe",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7823,9 +7839,9 @@
           "deliveries": [
             {
               "ball": "43.1",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7834,9 +7850,9 @@
             },
             {
               "ball": "43.2",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7845,9 +7861,9 @@
             },
             {
               "ball": "43.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7856,9 +7872,9 @@
             },
             {
               "ball": "43.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7867,9 +7883,9 @@
             },
             {
               "ball": "43.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7878,9 +7894,9 @@
             },
             {
               "ball": "43.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Arshavin Rampersad",
               "bowler": "Bhavish Saini",
-              "non_striker": "Sri Sadineni",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7894,9 +7910,9 @@
           "deliveries": [
             {
               "ball": "44.1",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7915,9 +7931,9 @@
             },
             {
               "ball": "44.2",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7926,9 +7942,9 @@
             },
             {
               "ball": "44.3",
-              "batter": "Sri Sadineni",
+              "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,

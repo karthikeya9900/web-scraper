@@ -9,6 +9,13 @@ import re
 # HELPERS
 # =========================================================
 
+def clean_player_out(name):
+    if not name:
+        return None
+    name = re.sub(r'^(run\s*[- ]?out\s*)', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'^(out\s*)', '', name, flags=re.IGNORECASE)
+    return clean(name)
+
 def normalize_name(name):
     if not name:
         return ""
@@ -28,8 +35,7 @@ def extract_dismissal_text(text):
         text = text.split("OUT!", 1)[1]
 
     # remove commentary keywords
-    text = re.sub(r'\b(CATCH|BOWLED|LBW|RUN OUT|STUMPED)\b', '', text, flags=re.IGNORECASE)
-
+    text = re.sub(r'\b(CATCH|BOWLED|LBW|STUMPED)\b', '', text, flags=re.IGNORECASE)
     # remove score part
     text = re.split(r'\d+\s*\(', text)[0]
     print(text,sep="\n\n")
@@ -452,23 +458,34 @@ def parse_event(full_text, batter_name, is_wicket):
                 })
 
         # -------- RUN OUT --------
-        elif "run out" in dismissal_text.lower():
-            m = re.search(r'^([A-Za-z\s\.]+?)\s+run out\s*\(([^)]+)\)', dismissal_text, re.IGNORECASE)
+        elif "run out" in full_text.lower():
+        
+            m = re.search(
+                r'^([A-Za-z\s\.]+)\s+run\s*[- ]?out\s*\(([^)]+)\)',
+                dismissal_text,
+                re.IGNORECASE
+            )
+        
             if m:
-                fielders = [clean(x) for x in m.group(2).split("/")]
                 wickets.append({
                     "kind": "run out",
-                    "player_out": clean(m.group(1)),
-                    "fielders": fielders
+                    "player_out": clean_player_out(m.group(1)),
+                    "fielders": [clean(x) for x in m.group(2).split("/")]
                 })
-
-        # -------- LBW --------
+            else:
+                # fallback if format is messy
+                m2 = re.search(r'run\s*[- ]?out', dismissal_text, re.IGNORECASE)
+        
+                wickets.append({
+                    "kind": "run out",
+                    "player_out": batter_name
+                }) # -------- LBW --------
         elif "lbw" in dismissal_text.lower():
             m = re.search(r'^([A-Za-z\s\.]+?)\s+lbw\s+b\s+([A-Za-z\s\.]+)', dismissal_text, re.IGNORECASE)
             if m:
                 wickets.append({
                     "kind": "lbw",
-                    "player_out": clean(m.group(1)),
+                    "player_out": clean(re.sub(r'^(run\s*[- ]?out)\s*', '', m.group(1), flags=re.IGNORECASE)),
                     "bowler": clean(m.group(2))
                 })
 
@@ -484,9 +501,10 @@ def parse_event(full_text, batter_name, is_wicket):
 
         # -------- FALLBACK --------
         else:
+            # DO NOT silently mislabel runouts
             wickets.append({
                 "kind": "unknown",
-                "player_out": batter_name
+                "player_out": extract_dismissal_text(full_text)
             })
 
         if wickets and wickets[0]["kind"] != "run out":
