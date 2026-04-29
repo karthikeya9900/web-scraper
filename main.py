@@ -1,6 +1,6 @@
 import asyncio
 import webScraper
-import parseDataToJSON   # your first file
+import parseDataToJSON 
 
 URL = "https://cricclubs.com/LionsSchools/results/qwfNdZ_0F-BfrvS39oKrCQ?tab=ball_by_ball"
 

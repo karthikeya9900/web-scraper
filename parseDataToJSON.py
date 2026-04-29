@@ -6,6 +6,46 @@ import re
 # HELPERS
 # =========================================================
 
+def match_team(toss_winner, teams):
+    tw = normalize_team(toss_winner)
+    tw_words = set(tw.split())
+
+    best_match = None
+    best_score = 0
+
+    for team in teams:
+        tn = normalize_team(team)
+        tn_words = set(tn.split())
+
+        # overlap score
+        score = len(tw_words & tn_words)
+
+        if score > best_score:
+            best_score = score
+            best_match = team
+
+    return best_match if best_score > 0 else None
+
+def normalize_team(name):
+    if not name:
+        return ""
+
+    name = name.lower()
+
+    # remove time patterns like 10:30 AM
+    name = re.sub(r'\b\d{1,2}[:.]\d{2}\s*(am|pm)?\b', '', name)
+
+    # remove standalone AM/PM
+    name = re.sub(r'\b(am|pm)\b', '', name)
+
+    # remove special chars but KEEP numbers
+    name = re.sub(r'[^a-z0-9\s]', '', name)
+
+    # normalize spaces
+    name = re.sub(r'\s+', ' ', name).strip()
+
+    return name
+
 def clean(text):
     return re.sub(r'\s+', ' ', text).strip()
 
@@ -47,7 +87,7 @@ def detect_wicket_type(text):
 
     if "bowled" in t:
         return "bowled"
-    if "caught" in t or "catch" in t:   # ✅ FIXED BUG
+    if "caught" in t or "catch" in t:   # ✅ FIXED_BUG
         return "catch"
     if "lbw" in t:
         return "lbw"
@@ -213,15 +253,23 @@ def order_innings(innings_list, toss_info):
     if not toss_info or len(innings_list) < 2:
         return innings_list
 
-    toss_winner = clean(toss_info["winner"])
     decision = toss_info["decision"]
+    teams = [inn["team"] for inn in innings_list]
 
-    team1 = clean(innings_list[0]["team"])
-    team2 = clean(innings_list[1]["team"])
+    matched_team = match_team(toss_info["winner"], teams)
 
-    first = toss_winner if decision == "bat" else (team2 if toss_winner == team1 else team1)
+    if not matched_team:
+        print("❌ Could not match toss winner:", toss_info["winner"])
+        return innings_list
 
-    return innings_list if team1 == first else list(reversed(innings_list))
+    opponent = [t for t in teams if t != matched_team][0]
+
+    first_team = matched_team if decision == "bat" else opponent
+
+    return sorted(
+        innings_list,
+        key=lambda x: 0 if x["team"] == first_team else 1
+    )
 
 
 # =========================================================
@@ -320,8 +368,8 @@ def parse_html(file_path, registry):
         soup = BeautifulSoup(f, "html.parser")
 
     team_name = extract_team_name(soup)
-    striker, non_striker, _ = extract_initial_players(soup)
 
+    striker, non_striker, _ = extract_initial_players(soup)
     striker = resolve_player(striker, registry)
     non_striker = resolve_player(non_striker, registry)
 
@@ -343,11 +391,41 @@ def parse_html(file_path, registry):
         bowler = resolve_player(bowler, registry)
         batter = resolve_player(batter, registry)
 
-        runs, extras, wickets, _ = parse_event(text, batter, "OUT!" in text)
+        runs, extras, wickets, is_legal = parse_event(
+            text, batter, "OUT!" in text
+        )
 
+        # =====================================================
+        # 🔥 1. REMOVE OUT PLAYER FIRST
+        # =====================================================
+        if wickets:
+            out_player = wickets[0]["player_out"]
+
+            if out_player == striker:
+                striker = None
+            elif out_player == non_striker:
+                non_striker = None
+
+        # =====================================================
+        # 🔥 2. ASSIGN STRIKER PROPERLY
+        # =====================================================
+        if striker is None:
+            striker = batter
+
+        current_striker = batter
+
+        # =====================================================
+        # 🔥 3. PREVENT SAME PLAYER BOTH SIDES
+        # =====================================================
+        if non_striker == current_striker:
+            non_striker = None
+
+        # =====================================================
+        # 🔥 4. BUILD DELIVERY (CLEAN STATE)
+        # =====================================================
         delivery = {
             "ball": f"{over_id}.{ball_id}",
-            "batter": striker,
+            "batter": current_striker,
             "bowler": bowler,
             "non_striker": non_striker,
             "runs": runs
@@ -361,6 +439,19 @@ def parse_html(file_path, registry):
 
         overs.setdefault(over_id, []).append(delivery)
 
+        # =====================================================
+        # 🔥 5. STRIKE ROTATION
+        # =====================================================
+        if is_legal:
+            if runs["total"] % 2 == 1:
+                striker, non_striker = non_striker, current_striker
+            else:
+                striker = current_striker
+
+            # over end rotation
+            if ball_id == "6":
+                striker, non_striker = non_striker, striker
+
     return {
         "team": team_name,
         "overs": [
@@ -368,7 +459,6 @@ def parse_html(file_path, registry):
             for o, d in sorted(overs.items(), key=lambda x: int(x[0]))
         ]
     }
-
 
 # =========================================================
 # PUBLIC API
