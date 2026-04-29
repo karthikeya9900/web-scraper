@@ -1,20 +1,28 @@
 from bs4 import BeautifulSoup
 from difflib import get_close_matches
-
 import re
 import json
-import re
 
 # =========================================================
 # HELPERS
 # =========================================================
 
-def clean_player_out(name):
+def clean(text):
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def normalize_team(name):
     if not name:
-        return None
-    name = re.sub(r'^(run\s*[- ]?out\s*)', '', name, flags=re.IGNORECASE)
-    name = re.sub(r'^(out\s*)', '', name, flags=re.IGNORECASE)
-    return clean(name)
+        return ""
+
+    name = name.lower()
+    name = re.sub(r'\b\d{1,2}[:.]\d{2}\s*(am|pm)?\b', '', name)
+    name = re.sub(r'\b(am|pm)\b', '', name)
+    name = re.sub(r'[^a-z0-9\s]', '', name)
+    name = re.sub(r'\s+', ' ', name).strip()
+
+    return name
+
 
 def normalize_name(name):
     if not name:
@@ -24,92 +32,6 @@ def normalize_name(name):
     name = re.sub(r'[^a-z\s]', '', name)
     name = re.sub(r'\s+', ' ', name).strip()
     return name
-
-def extract_dismissal_text(text):
-    """
-    Extract clean dismissal string like:
-    'Bion Meyer c Jordan D b Ezra P'
-    """
-
-    if "OUT!" in text:
-        text = text.split("OUT!", 1)[1]
-
-    # remove commentary keywords
-    text = re.sub(r'\b(CATCH|BOWLED|LBW|STUMPED)\b', '', text, flags=re.IGNORECASE)
-    # remove score part
-    text = re.split(r'\d+\s*\(', text)[0]
-    print(text,sep="\n\n")
-    return clean(text)
-
-def match_team(toss_winner, teams):
-    tw = normalize_team(toss_winner)
-    tw_words = set(tw.split())
-
-    best_match = None
-    best_score = 0
-
-    for team in teams:
-        tn = normalize_team(team)
-        tn_words = set(tn.split())
-
-        # overlap score
-        score = len(tw_words & tn_words)
-
-        if score > best_score:
-            best_score = score
-            best_match = team
-
-    return best_match if best_score > 0 else None
-
-def resolve_player(name, registry):
-    if not name:
-        return None
-
-    norm = normalize_name(name)
-
-    key = normalize_player_key(name)
-    if key in registry:
-        return registry[key]["full_name"]
-
-    for player in registry.values():
-        for alias in player.get("aliases", []):
-            if normalize_name(alias) == norm:
-                return player["full_name"]
-
-    for player in registry.values():
-        full = normalize_name(player["full_name"])
-        if norm in full or all(part in full for part in norm.split()):
-            return player["full_name"]
-
-    match = get_close_matches(name, [p["full_name"] for p in registry.values()], n=1, cutoff=0.6)
-    if match:
-        return match[0]
-
-    return name
-
-def normalize_team(name):
-    if not name:
-        return ""
-
-    name = name.lower()
-
-    # remove time patterns like 10:30 AM
-    name = re.sub(r'\b\d{1,2}[:.]\d{2}\s*(am|pm)?\b', '', name)
-
-    # remove standalone AM/PM
-    name = re.sub(r'\b(am|pm)\b', '', name)
-
-    # remove special chars but KEEP numbers
-    name = re.sub(r'[^a-z0-9\s]', '', name)
-
-    # normalize spaces
-    name = re.sub(r'\s+', ' ', name).strip()
-
-    return name
-
-
-def clean(text):
-    return re.sub(r'\s+', ' ', text).strip()
 
 
 def normalize_player_key(name):
@@ -122,6 +44,7 @@ def normalize_player_key(name):
 
     return name
 
+
 def empty_extras():
     return {
         "wides": 0,
@@ -130,98 +53,26 @@ def empty_extras():
         "noballs": 0
     }
 
-
 # =========================================================
-# WICKET + FIELDERS
+# PLAYER HELPERS
 # =========================================================
 
-# def parse_dismissal(full_text, batter_name):
+def extract_players(text):
+    m = re.search(r'(\d+\.\d+)\s+(.*)', text)
+    if not m:
+        return None, None
 
-#     text = full_text
+    line = m.group(2).split(",")[0]
 
-#     # remove score tail (after runs)
-#     text = re.split(r'\d+\s*\(', text)[0]
+    if " to " not in line:
+        return None, None
 
-#     # normalize
-#     text = clean(text)
+    bowler_raw, batter_raw = line.split(" to ")
+    return clean_player_name(bowler_raw), clean_player_name(batter_raw)
 
-#     # ---------------- CAUGHT ----------------
-#     m = re.search(r'^([A-Za-z\s\.]+?)\s+c\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', text)
-#     if m:
-#         return {
-#             "kind": "caught",
-#             "player_out": clean(m.group(1)),
-#             "fielders": [clean(m.group(2))],
-#             "bowler": clean(m.group(3))
-#         }
-
-#     # ---------------- STUMPED ----------------
-#     m = re.search(r'^([A-Za-z\s\.]+?)\s+st\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', text, re.IGNORECASE)
-#     if m:
-#         return {
-#             "kind": "stumped",
-#             "player_out": clean(m.group(1)),
-#             "fielders": [clean(m.group(2))],
-#             "bowler": clean(m.group(3))
-#         }
-
-#     # ---------------- RUN OUT ----------------
-#     m = re.search(r'^([A-Za-z\s\.]+?)\s+run out\s*\(([^)]+)\)', text, re.IGNORECASE)
-#     if m:
-#         fielders = [clean(x) for x in m.group(2).split("/")]
-#         return {
-#             "kind": "run out",
-#             "player_out": clean(m.group(1)),
-#             "fielders": fielders
-#         }
-
-#     # ---------------- LBW ----------------
-#     m = re.search(r'^([A-Za-z\s\.]+?)\s+lbw\s+b\s+([A-Za-z\s\.]+)', text, re.IGNORECASE)
-#     if m:
-#         return {
-#             "kind": "lbw",
-#             "player_out": clean(m.group(1)),
-#             "bowler": clean(m.group(2))
-#         }
-
-#     # ---------------- BOWLED ----------------
-#     m = re.search(r'^([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', text)
-#     if m:
-#         return {
-#             "kind": "bowled",
-#             "player_out": clean(m.group(1)),
-#             "bowler": clean(m.group(2))
-#         }
-
-#     # ---------------- FALLBACK ----------------
-#     return {
-#         "kind": "unknown",
-#         "player_out": batter_name
-#     }
-
-def extract_fielders(text):
-    m = re.search(r'c\s+([A-Za-z\s\.]+?)\s+b', text)
-    if m:
-        return clean(m.group(1))
-
-    m = re.search(r'st\s+([A-Za-z\s\.]+?)\s+b', text)
-    if m:
-        return clean(m.group(1))
-
-    m = re.search(r'run out\s*\(([^)]+)\)', text, re.IGNORECASE)
-    if m:
-        return clean(m.group(1))
-
-    return None
-
-
-# =========================================================
-# PLAYER UTILS
-# =========================================================
 
 def generate_aliases(name):
     aliases = set()
-
     if not name:
         return aliases
 
@@ -247,61 +98,83 @@ def clean_player_name(name):
     return clean(name)
 
 
-def sanitize_registry(registry):
-    return {
-        key: {
-            "full_name": value["full_name"],
-            "aliases": list(value["aliases"])
-        }
-        for key, value in registry.items()
-    }
+def clean_player_out(name):
+    if not name:
+        return None
 
+    name = re.sub(r'^(run\s*[- ]?out\s*)', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'^(out\s*)', '', name, flags=re.IGNORECASE)
+    return clean(name)
+
+
+def resolve_player(name, registry):
+    if not name:
+        return None
+
+    norm = normalize_name(name)
+    key = normalize_player_key(name)
+
+    if key in registry:
+        return registry[key]["full_name"]
+
+    for player in registry.values():
+        for alias in player.get("aliases", []):
+            if normalize_name(alias) == norm:
+                return player["full_name"]
+
+    for player in registry.values():
+        full = normalize_name(player["full_name"])
+        if norm in full or all(part in full for part in norm.split()):
+            return player["full_name"]
+
+    match = get_close_matches(name, [p["full_name"] for p in registry.values()], n=1, cutoff=0.6)
+    if match:
+        return match[0]
+
+    return name
 
 # =========================================================
-# META + TOSS
+# MATCH + TEAM
 # =========================================================
 
-def extract_match_meta(soup):
-    title = clean(soup.title.string) if soup.title else ""
+def match_team(toss_winner, teams):
+    tw = normalize_team(toss_winner)
+    tw_words = set(tw.split())
 
-    if not title:
-        return {}
+    best_match = None
+    best_score = 0
 
-    parts = title.split(" - ")
+    for team in teams:
+        tn = normalize_team(team)
+        tn_words = set(tn.split())
 
-    return {
-        "match": clean(parts[0]) if len(parts) > 0 else "",
-        "league": clean(parts[1]) if len(parts) > 1 else ""
-    }
+        score = len(tw_words & tn_words)
+
+        if score > best_score:
+            best_score = score
+            best_match = team
+
+    return best_match if best_score > 0 else None
 
 
-def extract_toss_info(soup):
-    for el in soup.find_all(string=re.compile("won the toss", re.IGNORECASE)):
-        line = clean(el)
+def extract_team_name(soup):
+    for btn in soup.select("button.ant-dropdown-trigger"):
+        text = clean(btn.get_text(" ", strip=True))
+        if text not in ["Old", "All", "", "Members", "Clubs", "Matches", "Statistics", "Series", "League"]:
+            return text
+    return "Unknown"
 
-        match = re.search(
-            r'([A-Za-z\s]+?)\s+won the toss and (elected|chose|opted) to\s+(bat|field|bowl)',
-            line,
-            re.IGNORECASE
-        )
+# =========================================================
+# DISMISSAL
+# =========================================================
 
-        if match:
-            winner = clean(match.group(1))
-            decision = match.group(3).lower()
+def extract_dismissal_text(text):
+    if "OUT!" in text:
+        text = text.split("OUT!", 1)[1]
 
-            # safer cleanup (ONLY remove time-like patterns)
-            winner = re.sub(r'\b\d{1,2}:\d{2}\s*(AM|PM)?\b', '', winner, flags=re.IGNORECASE)
-            winner = clean(winner)
-
-            if decision == "bowl":
-                decision = "field"
-
-            return {
-                "winner": winner,
-                "decision": decision
-            }
-
-    return None
+    text = re.sub(r'\b(CATCH|BOWLED|LBW|STUMPED)\b', '', text, flags=re.IGNORECASE)
+    text = re.split(r'\d+\s*\(', text)[0]
+    return clean(text)
 
 # =========================================================
 # PLAYER REGISTRY
@@ -312,7 +185,6 @@ def extract_player_registry(soup):
 
     for block in soup.select("div.border-b"):
         text = clean(block.get_text(" ", strip=True))
-
         candidates = []
 
         if "comes to the crease" in text:
@@ -335,46 +207,8 @@ def extract_player_registry(soup):
 
     return registry
 
-
 # =========================================================
-# TEAM + ORDER
-# =========================================================
-
-def extract_team_name(soup):
-    for btn in soup.select("button.ant-dropdown-trigger"):
-        text = clean(btn.get_text(" ", strip=True))
-
-        if text not in ["Old", "All", "", "Members", "Clubs", "Matches", "Statistics", "Series", "League"]:
-            return text
-
-    return "Unknown"
-
-
-def order_innings(innings_list, toss_info):
-    if not toss_info or len(innings_list) < 2:
-        return innings_list
-
-    decision = toss_info["decision"]
-    teams = [inn["team"] for inn in innings_list]
-
-    matched_team = match_team(toss_info["winner"], teams)
-
-    if not matched_team:
-        print("❌ Could not match toss winner:", toss_info["winner"])
-        return innings_list
-
-    opponent = [t for t in teams if t != matched_team][0]
-
-    first_team = matched_team if decision == "bat" else opponent
-
-    return sorted(
-        innings_list,
-        key=lambda x: 0 if x["team"] == first_team else 1
-    )
-
-
-# =========================================================
-# CORE PARSING
+# INITIAL PLAYERS
 # =========================================================
 
 def extract_initial_players(soup):
@@ -401,23 +235,8 @@ def extract_initial_players(soup):
         bowler
     )
 
-
-def extract_players(text):
-    m = re.search(r'\d+\.\d+\s+(.*)', text)
-    if not m:
-        return None, None
-
-    line = m.group(1).split(",")[0]
-
-    if " to " not in line:
-        return None, None
-
-    bowler_raw, batter_raw = line.split(" to ")
-    return clean_player_name(bowler_raw), clean_player_name(batter_raw)
-
-
 # =========================================================
-# EVENT PARSER (unchanged logic)
+# EVENT PARSER
 # =========================================================
 
 def parse_event(full_text, batter_name, is_wicket):
@@ -428,15 +247,13 @@ def parse_event(full_text, batter_name, is_wicket):
     extras = empty_extras()
     wickets = []
 
-    # =========================================================
-    # 🔥 WICKET HANDLING (FIXED)
-    # =========================================================
+    # =====================================================
+    # WICKET HANDLING (FIXED)
+    # =====================================================
     if is_wicket:
         dismissal_text = extract_dismissal_text(full_text)
-        # print(full_text,sep="\n\n")
 
-
-        # -------- CAUGHT --------
+        # CAUGHT
         m = re.search(r'^([A-Za-z\s\.]+?)\s+c\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', dismissal_text)
         if m:
             wickets.append({
@@ -446,7 +263,7 @@ def parse_event(full_text, batter_name, is_wicket):
                 "bowler": clean(m.group(3))
             })
 
-        # -------- STUMPED --------
+        # STUMPED
         elif re.search(r'\bst\b', dismissal_text, re.IGNORECASE):
             m = re.search(r'^([A-Za-z\s\.]+?)\s+st\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', dismissal_text, re.IGNORECASE)
             if m:
@@ -457,15 +274,10 @@ def parse_event(full_text, batter_name, is_wicket):
                     "bowler": clean(m.group(3))
                 })
 
-        # -------- RUN OUT --------
-        elif "run out" in full_text.lower():
-        
-            m = re.search(
-                r'^([A-Za-z\s\.]+)\s+run\s*[- ]?out\s*\(([^)]+)\)',
-                dismissal_text,
-                re.IGNORECASE
-            )
-        
+        # RUN OUT
+        elif "run out" in t:
+            m = re.search(r'^([A-Za-z\s\.]+)\s+run\s*[- ]?out\s*\(([^)]+)\)', dismissal_text, re.IGNORECASE)
+
             if m:
                 wickets.append({
                     "kind": "run out",
@@ -473,23 +285,22 @@ def parse_event(full_text, batter_name, is_wicket):
                     "fielders": [clean(x) for x in m.group(2).split("/")]
                 })
             else:
-                # fallback if format is messy
-                m2 = re.search(r'run\s*[- ]?out', dismissal_text, re.IGNORECASE)
-        
                 wickets.append({
                     "kind": "run out",
                     "player_out": batter_name
-                }) # -------- LBW --------
+                })
+
+        # LBW
         elif "lbw" in dismissal_text.lower():
             m = re.search(r'^([A-Za-z\s\.]+?)\s+lbw\s+b\s+([A-Za-z\s\.]+)', dismissal_text, re.IGNORECASE)
             if m:
                 wickets.append({
                     "kind": "lbw",
-                    "player_out": clean(re.sub(r'^(run\s*[- ]?out)\s*', '', m.group(1), flags=re.IGNORECASE)),
+                    "player_out": clean(m.group(1)),
                     "bowler": clean(m.group(2))
                 })
 
-        # -------- BOWLED --------
+        # BOWLED
         elif re.search(r'\sb\s+', dismissal_text):
             m = re.search(r'^([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', dismissal_text)
             if m:
@@ -499,51 +310,40 @@ def parse_event(full_text, batter_name, is_wicket):
                     "bowler": clean(m.group(2))
                 })
 
-        # -------- FALLBACK --------
         else:
-            # DO NOT silently mislabel runouts
             wickets.append({
                 "kind": "unknown",
                 "player_out": extract_dismissal_text(full_text)
             })
 
-        if wickets and wickets[0]["kind"] != "run out":
+        # FIXED: always return immediately after wicket parsing
+        if wickets:
             return runs, extras, wickets, True
 
-    # =========================================================
-    # RUN EXTRACTION
-    # =========================================================
+    # =====================================================
+    # RUNS
+    # =====================================================
     run_matches = re.findall(r'(\d+)\s*(?:run|runs)', t)
     base_runs = sum(int(n) for n in run_matches) if run_matches else 0
 
-    # =========================================================
-    # WIDE
-    # =========================================================
     if "wide" in t:
         wd_match = re.search(r'\b(\d+)\s*wd\b', t)
-
         total = int(wd_match.group(1)) if wd_match else 1
 
         extras["wides"] = total
         runs["extras"] = total
         runs["total"] = total
-
         return runs, extras, wickets, False
 
-    # =========================================================
-    # NO BALL
-    # =========================================================
     if "no ball" in t:
         extras["noballs"] = 1
 
         if "leg bye" in t:
             extras["legbyes"] = base_runs
             runs["extras"] = 1 + base_runs
-
         elif "bye" in t:
             extras["byes"] = base_runs
             runs["extras"] = 1 + base_runs
-
         else:
             runs["batter"] = base_runs
             runs["extras"] = 1
@@ -551,31 +351,23 @@ def parse_event(full_text, batter_name, is_wicket):
         runs["total"] = runs["batter"] + runs["extras"]
         return runs, extras, wickets, True
 
-    # =========================================================
-    # LEG BYE
-    # =========================================================
     if "leg bye" in t:
-        extras["legbyes"] = base_runs if base_runs else 1
+        extras["legbyes"] = base_runs or 1
         runs["extras"] = extras["legbyes"]
         runs["total"] = runs["extras"]
         return runs, extras, wickets, True
 
-    # =========================================================
-    # BYE
-    # =========================================================
     if "bye" in t:
-        extras["byes"] = base_runs if base_runs else 1
+        extras["byes"] = base_runs or 1
         runs["extras"] = extras["byes"]
         runs["total"] = runs["extras"]
         return runs, extras, wickets, True
 
-    # =========================================================
-    # NORMAL RUNS
-    # =========================================================
     runs["batter"] = base_runs
     runs["total"] = base_runs
 
     return runs, extras, wickets, True
+
 # =========================================================
 # HTML PARSER
 # =========================================================
@@ -601,9 +393,6 @@ def parse_html(file_path, registry):
     for node in soup.select("div.border-b"):
         text = clean(node.get_text(" ", strip=True))
 
-        # =====================================================
-        # NEW BATSMAN DETECTION
-        # =====================================================
         if "comes to the crease" in text:
             new_player = clean_player_name(text.split("comes")[0])
             state["pending_batter"] = resolve_player(new_player, registry)
@@ -628,11 +417,7 @@ def parse_html(file_path, registry):
             text, state["striker"], is_wicket
         )
 
-        # =====================================================
-        # STEP 1: APPLY WICKET STATE TRANSITION (FIXED)
-        # =====================================================
         out_player = None
-
         if wickets:
             out_player = wickets[0]["player_out"]
 
@@ -641,37 +426,19 @@ def parse_html(file_path, registry):
             elif state["non_striker"] == out_player:
                 state["non_striker"] = None
 
-        # =====================================================
-        # STEP 2: RESOLVE NEW BATSMAN (CRICHEET RULE)
-        # =====================================================
         if state["striker"] is None:
-            if state["pending_batter"]:
-                state["striker"] = state["pending_batter"]
-                state["pending_batter"] = None
-            else:
-                state["striker"] = batter
+            state["striker"] = state["pending_batter"] or batter
+            state["pending_batter"] = None
 
-        # =====================================================
-        # STEP 3: NON STRIKER FIX (NO OVERWRITE BUG FIXED)
-        # =====================================================
         if state["non_striker"] is None:
-            if batter != state["striker"]:
-                state["non_striker"] = batter
-            else:
-                state["non_striker"] = "Unknown"
+            state["non_striker"] = batter if batter != state["striker"] else "Unknown"
 
-        # prevent duplicates safely
         if state["striker"] == state["non_striker"]:
             state["non_striker"] = "Unknown"
 
-        current_striker = state["striker"]
-
-        # =====================================================
-        # STEP 4: DELIVERY SNAPSHOT (CRICHEET STYLE)
-        # =====================================================
         delivery = {
             "ball": f"{over_id}.{ball_id}",
-            "batter": current_striker,
+            "batter": state["striker"],
             "bowler": bowler,
             "non_striker": state["non_striker"],
             "runs": runs
@@ -685,11 +452,7 @@ def parse_html(file_path, registry):
 
         overs.setdefault(over_id, []).append(delivery)
 
-        # =====================================================
-        # STEP 5: STRIKE ROTATION (SAFE STATE ONLY)
-        # =====================================================
         if is_legal:
-
             if runs["total"] % 2 == 1:
                 state["striker"], state["non_striker"] = state["non_striker"], state["striker"]
 
@@ -705,8 +468,71 @@ def parse_html(file_path, registry):
     }
 
 # =========================================================
-# PUBLIC API
+# MAIN API
 # =========================================================
+
+def sanitize_registry(registry):
+    return {
+        key: {
+            "full_name": value["full_name"],
+            "aliases": list(value["aliases"])
+        }
+        for key, value in registry.items()
+    }
+
+
+def extract_match_meta(soup):
+    title = clean(soup.title.string) if soup.title else ""
+    parts = title.split(" - ")
+
+    return {
+        "match": parts[0] if len(parts) > 0 else "",
+        "league": parts[1] if len(parts) > 1 else ""
+    }
+
+
+def extract_toss_info(soup):
+    for el in soup.find_all(string=re.compile("won the toss", re.IGNORECASE)):
+        line = clean(el)
+
+        match = re.search(
+            r'([A-Za-z\s]+?)\s+won the toss and (elected|chose|opted) to\s+(bat|field|bowl)',
+            line,
+            re.IGNORECASE
+        )
+
+        if match:
+            winner = clean(match.group(1))
+            decision = match.group(3).lower()
+
+            return {
+                "winner": winner,
+                "decision": "field" if decision == "bowl" else decision
+            }
+
+    return None
+
+
+def order_innings(innings_list, toss_info):
+    if not toss_info or len(innings_list) < 2:
+        return innings_list
+
+    teams = [inn["team"] for inn in innings_list]
+    matched_team = match_team(toss_info["winner"], teams)
+
+    if not matched_team:
+        return innings_list
+
+    opponent = [t for t in teams if t != matched_team]
+    if not opponent:
+        return innings_list
+
+    opponent = opponent[0]
+
+    first_team = matched_team if toss_info["decision"] == "bat" else opponent
+
+    return sorted(innings_list, key=lambda x: 0 if x["team"] == first_team else 1)
+
 
 def generate_match_json(files, output_file=None):
     match_context = {
@@ -717,33 +543,19 @@ def generate_match_json(files, output_file=None):
         "innings_raw": []
     }
 
-    # =========================================================
-    # PASS 1 → Scan ALL files for meta, registry, toss
-    # =========================================================
     for file_path in files:
-        print(f"🔍 Scanning {file_path}")
-
         with open(file_path, "r", encoding="utf-8") as f:
             soup = BeautifulSoup(f, "html.parser")
 
-        # meta (only once)
         if not match_context["meta"]:
             match_context["meta"] = extract_match_meta(soup)
 
-        # registry (only once)
         if not match_context["player_registry"]:
             match_context["player_registry"] = extract_player_registry(soup)
 
-        # 🔥 IMPORTANT: check toss in EVERY file
         if match_context["toss"] is None:
-            toss = extract_toss_info(soup)
-            if toss:
-                print(f"✅ Toss found in {file_path}: {toss}")
-                match_context["toss"] = toss
+            match_context["toss"] = extract_toss_info(soup)
 
-    # =========================================================
-    # PASS 2 → Parse innings
-    # =========================================================
     for file_path in files:
         innings = parse_html(file_path, match_context["player_registry"])
         match_context["teams"].add(innings["team"])
@@ -766,9 +578,6 @@ def generate_match_json(files, output_file=None):
 
     return result
 
-# =========================================================
-# CLI RUN (OPTIONAL)
-# =========================================================
 
 if __name__ == "__main__":
     files = ["innings_1.html", "innings_2.html"]
