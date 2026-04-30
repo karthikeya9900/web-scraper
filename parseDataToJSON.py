@@ -422,15 +422,30 @@ def parse_html(file_path, registry):
         over_id, ball_id = match.groups()
 
         # ------------------------------------------
-        # APPLY NEW BATTER (ONLY BEFORE DELIVERY)
+        # APPLY NEW BATTER (WITH OVER-END LOGIC ✅)
         # ------------------------------------------
         if state["apply_new_batter_next_ball"] and state["incoming_batter"]:
+        
             if state["last_wicket"]:
-                if state["last_wicket"]["was_striker"]:
-                    state["striker"] = state["incoming_batter"]
+                was_striker = state["last_wicket"]["was_striker"]
+        
+                # CASE 1: Wicket at end of over
+                if state.get("last_ball_was_over_end"):
+                
+                    if was_striker:
+                        # new batter goes to NON-STRIKER (because of rotation)
+                        state["non_striker"] = state["incoming_batter"]
+                    else:
+                        # rare case (runout non-striker)
+                        state["striker"] = state["incoming_batter"]
+        
+                # CASE 2: normal (not end of over)
                 else:
-                    state["non_striker"] = state["incoming_batter"]
-
+                    if was_striker:
+                        state["striker"] = state["incoming_batter"]
+                    else:
+                        state["non_striker"] = state["incoming_batter"]
+        
             state["incoming_batter"] = None
             state["last_wicket"] = None
             state["apply_new_batter_next_ball"] = False
@@ -463,11 +478,6 @@ def parse_html(file_path, registry):
             }
 
             state["apply_new_batter_next_ball"] = True
-
-            if state["striker"] == out_player:
-                state["striker"] = None
-            elif state["non_striker"] == out_player:
-                state["non_striker"] = None
 
         # ------------------------------------------
         # SAFE FALLBACK (DO NOT OVERRIDE NEW BATTER)
@@ -504,20 +514,22 @@ def parse_html(file_path, registry):
         overs.setdefault(over_id, []).append(delivery)
 
         # ------------------------------------------
-        # REMOVE OUT PLAYER AFTER DELIVERY (CRITICAL FIX)
+        # REMOVE OUT PLAYER AFTER DELIVERY (SAFE FIX)
         # ------------------------------------------
-        if wickets:
+        if wickets and state["apply_new_batter_next_ball"]:
             out_player = state["last_wicket"]["player_out"]
-        
-            if state["striker"] == out_player:
-                state["striker"] = None
-            elif state["non_striker"] == out_player:
-                state["non_striker"] = None
+
+            # only clear if new batter is ready
+            if state["incoming_batter"]:
+                if state["striker"] == out_player:
+                    state["striker"] = None
+                elif state["non_striker"] == out_player:
+                    state["non_striker"] = None
 
         # ------------------------------------------
         # STRIKE ROTATION
         # ------------------------------------------
-        if is_legal:
+        if is_legal and not wickets:
             if runs["total"] % 2 == 1:
                 state["striker"], state["non_striker"] = state["non_striker"], state["striker"]
 

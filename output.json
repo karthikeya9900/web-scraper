@@ -15,41 +15,41 @@
     "jordan_de_smidt": {
       "full_name": "Jordan De Smidt",
       "aliases": [
-        "JDS",
         "Jordan De Smidt",
+        "JDS",
         "J. De Smidt"
       ]
     },
     "arshavin_rampersad": {
       "full_name": "Arshavin Rampersad",
       "aliases": [
-        "AR",
         "A. Rampersad",
+        "AR",
         "Arshavin Rampersad"
       ]
     },
     "frederik_du_plessis": {
       "full_name": "Frederik Du Plessis",
       "aliases": [
-        "Frederik Du Plessis",
         "F. Du Plessis",
+        "Frederik Du Plessis",
         "FDP"
       ]
     },
     "simeon_kleynhans": {
       "full_name": "Simeon Kleynhans",
       "aliases": [
-        "Simeon Kleynhans",
+        "SK",
         "S. Kleynhans",
-        "SK"
+        "Simeon Kleynhans"
       ]
     },
     "tyler_mncube": {
       "full_name": "Tyler Mncube",
       "aliases": [
+        "Tyler Mncube",
         "TM",
-        "T. Mncube",
-        "Tyler Mncube"
+        "T. Mncube"
       ]
     },
     "thomas_brevis": {
@@ -64,71 +64,71 @@
       "full_name": "Ulrich Van Der Merwe",
       "aliases": [
         "UVDM",
-        "Ulrich Van Der Merwe",
-        "U. Van Der Merwe"
+        "U. Van Der Merwe",
+        "Ulrich Van Der Merwe"
       ]
     },
     "qhayiya_poswa": {
       "full_name": "Qhayiya Poswa",
       "aliases": [
         "Qhayiya Poswa",
-        "QP",
-        "Q. Poswa"
+        "Q. Poswa",
+        "QP"
       ]
     },
     "bhavish_saini": {
       "full_name": "Bhavish Saini",
       "aliases": [
+        "B. Saini",
         "Bhavish Saini",
-        "BS",
-        "B. Saini"
+        "BS"
       ]
     },
     "derick_nelson": {
       "full_name": "Derick Nelson",
       "aliases": [
         "DN",
-        "D. Nelson",
-        "Derick Nelson"
+        "Derick Nelson",
+        "D. Nelson"
       ]
     },
     "sean_rowles": {
       "full_name": "Sean Rowles",
       "aliases": [
-        "Sean Rowles",
         "SR",
-        "S. Rowles"
+        "S. Rowles",
+        "Sean Rowles"
       ]
     },
     "caleb_allan": {
       "full_name": "Caleb Allan",
       "aliases": [
-        "C. Allan",
         "CA",
+        "C. Allan",
         "Caleb Allan"
       ]
     },
     "sri_sadineni": {
       "full_name": "Sri Sadineni",
       "aliases": [
-        "SS",
         "Sri Sadineni",
+        "SS",
         "S. Sadineni"
       ]
     },
     "hamzah_akabor": {
       "full_name": "Hamzah Akabor",
       "aliases": [
+        "H. Akabor",
         "HA",
-        "Hamzah Akabor",
-        "H. Akabor"
+        "Hamzah Akabor"
       ]
     },
     "ethan_matjekane": {
       "full_name": "Ethan Matjekane",
       "aliases": [
-        "Ethan Matjekane",
         "EM",
+        "Ethan Matjekane",
         "E. Matjekane"
       ]
     },
@@ -136,8 +136,8 @@
       "full_name": "Ezra Pillay",
       "aliases": [
         "Ezra Pillay",
-        "E. Pillay",
-        "EP"
+        "EP",
+        "E. Pillay"
       ]
     },
     "santiago_palaciosflusk": {
@@ -151,9 +151,9 @@
     "chaitu_a": {
       "full_name": "Chaitu A",
       "aliases": [
-        "C. A",
         "CA",
-        "Chaitu A"
+        "Chaitu A",
+        "C. A"
       ]
     }
   },
@@ -863,7 +863,7 @@
             },
             {
               "ball": "8.6",
-              "batter": null,
+              "batter": "Bion Meyer",
               "bowler": "W . Ezra P",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1012,7 +1012,7 @@
               "ball": "10.4",
               "batter": "Simeon Kleynhans",
               "bowler": "W . Ezra P",
-              "non_striker": null,
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3366,7 +3366,7 @@
             },
             {
               "ball": "39.3",
-              "batter": null,
+              "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
               "non_striker": "Karel Jan Doyer",
               "runs": {
@@ -3636,7 +3636,7 @@
               "ball": "42.4",
               "batter": "Karel Jan Doyer",
               "bowler": "W . Sri S",
-              "non_striker": null,
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3681,7 +3681,7 @@
               "ball": "43.1",
               "batter": "Bhavish Saini",
               "bowler": "Sean Rowles",
-              "non_striker": null,
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3929,7 +3929,7 @@
               "ball": "46.2",
               "batter": "Bhavish Saini",
               "bowler": "W . Ty P",
-              "non_striker": null,
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3948,7 +3948,7 @@
             },
             {
               "ball": "46.3",
-              "batter": null,
+              "batter": "Bhavish Saini",
               "bowler": "W . Ty P",
               "non_striker": "Tyler Mncube",
               "runs": {
@@ -4161,7 +4161,7 @@
               "ball": "49.2",
               "batter": "Tyler Mncube",
               "bowler": "W . Sri S",
-              "non_striker": null,
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5607,7 +5607,7 @@
               "ball": "16.1",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": null,
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6670,7 +6670,7 @@
             },
             {
               "ball": "29.4",
-              "batter": null,
+              "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
               "non_striker": "Qhayiya Poswa",
               "runs": {
@@ -6861,7 +6861,7 @@
             },
             {
               "ball": "31.6",
-              "batter": null,
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
               "non_striker": "Sean Rowles",
               "runs": {
@@ -6889,7 +6889,7 @@
               "ball": "32.1",
               "batter": "Caleb Allan",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6900,7 +6900,7 @@
               "ball": "32.2",
               "batter": "Caleb Allan",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6909,7 +6909,7 @@
             },
             {
               "ball": "32.3",
-              "batter": "Unknown",
+              "batter": "Sean Rowles",
               "bowler": "Frederik Du Plessis",
               "non_striker": "Caleb Allan",
               "runs": {
@@ -6922,7 +6922,7 @@
               "ball": "32.4",
               "batter": "Caleb Allan",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6931,9 +6931,9 @@
             },
             {
               "ball": "32.5",
-              "batter": null,
+              "batter": "Caleb Allan",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6951,7 +6951,7 @@
               "ball": "32.6",
               "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -6965,7 +6965,7 @@
           "deliveries": [
             {
               "ball": "33.1",
-              "batter": "Unknown",
+              "batter": "Sean Rowles",
               "bowler": "Thomas Brevis",
               "non_striker": "Sri Sadineni",
               "runs": {
@@ -6976,7 +6976,7 @@
             },
             {
               "ball": "33.2",
-              "batter": "Unknown",
+              "batter": "Sean Rowles",
               "bowler": "Thomas Brevis",
               "non_striker": "Sri Sadineni",
               "runs": {
@@ -6996,9 +6996,9 @@
             },
             {
               "ball": "33.3",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7007,9 +7007,9 @@
             },
             {
               "ball": "33.4",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7018,9 +7018,9 @@
             },
             {
               "ball": "33.5",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7029,9 +7029,9 @@
             },
             {
               "ball": "33.6",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7045,9 +7045,9 @@
           "deliveries": [
             {
               "ball": "34.1",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7056,9 +7056,9 @@
             },
             {
               "ball": "34.2",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7067,9 +7067,9 @@
             },
             {
               "ball": "34.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7078,9 +7078,9 @@
             },
             {
               "ball": "34.4",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7089,9 +7089,9 @@
             },
             {
               "ball": "34.5",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7100,9 +7100,9 @@
             },
             {
               "ball": "34.6",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7116,9 +7116,9 @@
           "deliveries": [
             {
               "ball": "35.1",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Thomas Brevis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7133,9 +7133,9 @@
             },
             {
               "ball": "35.1",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Thomas Brevis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7144,9 +7144,9 @@
             },
             {
               "ball": "35.2",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Thomas Brevis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7155,9 +7155,9 @@
             },
             {
               "ball": "35.3",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7166,9 +7166,9 @@
             },
             {
               "ball": "35.4",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7177,9 +7177,9 @@
             },
             {
               "ball": "35.5",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7188,9 +7188,9 @@
             },
             {
               "ball": "35.6",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7205,9 +7205,9 @@
             },
             {
               "ball": "35.6",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7221,9 +7221,9 @@
           "deliveries": [
             {
               "ball": "36.1",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7232,9 +7232,9 @@
             },
             {
               "ball": "36.2",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7243,9 +7243,9 @@
             },
             {
               "ball": "36.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7254,9 +7254,9 @@
             },
             {
               "ball": "36.4",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7265,9 +7265,9 @@
             },
             {
               "ball": "36.5",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7276,9 +7276,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "wd . Frederik D",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7293,9 +7293,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "wd . Frederik D",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7310,9 +7310,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7326,9 +7326,9 @@
           "deliveries": [
             {
               "ball": "37.1",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7337,9 +7337,9 @@
             },
             {
               "ball": "37.2",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7348,9 +7348,9 @@
             },
             {
               "ball": "37.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7359,9 +7359,9 @@
             },
             {
               "ball": "37.4",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7370,9 +7370,9 @@
             },
             {
               "ball": "37.5",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7381,9 +7381,9 @@
             },
             {
               "ball": "37.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7398,9 +7398,9 @@
             },
             {
               "ball": "37.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7414,9 +7414,9 @@
           "deliveries": [
             {
               "ball": "38.1",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7425,9 +7425,9 @@
             },
             {
               "ball": "38.2",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7436,9 +7436,9 @@
             },
             {
               "ball": "38.3",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7447,9 +7447,9 @@
             },
             {
               "ball": "38.4",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7458,9 +7458,9 @@
             },
             {
               "ball": "38.5",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7469,9 +7469,9 @@
             },
             {
               "ball": "38.6",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7485,18 +7485,7 @@
           "deliveries": [
             {
               "ball": "39.1",
-              "batter": "Hamzah Akabor",
-              "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
-              "runs": {
-                "batter": 1,
-                "extras": 0,
-                "total": 1
-              }
-            },
-            {
-              "ball": "39.2",
-              "batter": "Unknown",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
               "non_striker": "Hamzah Akabor",
               "runs": {
@@ -7506,10 +7495,21 @@
               }
             },
             {
-              "ball": "39.3",
+              "ball": "39.2",
               "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Sri Sadineni",
+              "runs": {
+                "batter": 1,
+                "extras": 0,
+                "total": 1
+              }
+            },
+            {
+              "ball": "39.3",
+              "batter": "Sri Sadineni",
+              "bowler": "Bhavish Saini",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7518,9 +7518,9 @@
             },
             {
               "ball": "39.4",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7529,9 +7529,9 @@
             },
             {
               "ball": "39.5",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7540,9 +7540,9 @@
             },
             {
               "ball": "39.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Bhavish Saini",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7556,9 +7556,9 @@
           "deliveries": [
             {
               "ball": "40.1",
-              "batter": "Unknown",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7567,9 +7567,9 @@
             },
             {
               "ball": "40.2",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7578,9 +7578,9 @@
             },
             {
               "ball": "40.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7589,9 +7589,9 @@
             },
             {
               "ball": "40.4",
-              "batter": "Hamzah Akabor",
+              "batter": "Sri Sadineni",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Unknown",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7610,9 +7610,9 @@
             },
             {
               "ball": "40.5",
-              "batter": "Hamzah Akabor",
+              "batter": "Ethan Matjekane",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Ethan Matjekane",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7621,9 +7621,9 @@
             },
             {
               "ball": "40.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Ethan Matjekane",
               "bowler": "wd . Ulrich V",
-              "non_striker": "Ethan Matjekane",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7638,9 +7638,9 @@
             },
             {
               "ball": "40.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Ethan Matjekane",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Ethan Matjekane",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7654,9 +7654,9 @@
           "deliveries": [
             {
               "ball": "41.1",
-              "batter": "Hamzah Akabor",
+              "batter": "Ethan Matjekane",
               "bowler": "Bhavish Saini",
-              "non_striker": "Ethan Matjekane",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7665,9 +7665,9 @@
             },
             {
               "ball": "41.2",
-              "batter": "Hamzah Akabor",
+              "batter": "Ethan Matjekane",
               "bowler": "Bhavish Saini",
-              "non_striker": null,
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7686,9 +7686,9 @@
             },
             {
               "ball": "41.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Ezra Pillay",
               "bowler": "Bhavish Saini",
-              "non_striker": "Ezra Pillay",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7703,9 +7703,9 @@
             },
             {
               "ball": "41.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Ezra Pillay",
               "bowler": "Bhavish Saini",
-              "non_striker": "Ezra Pillay",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7714,9 +7714,9 @@
             },
             {
               "ball": "41.4",
-              "batter": "Hamzah Akabor",
+              "batter": "Ezra Pillay",
               "bowler": "Bhavish Saini",
-              "non_striker": "Ezra Pillay",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7725,9 +7725,9 @@
             },
             {
               "ball": "41.5",
-              "batter": "Ezra Pillay",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Ezra Pillay",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7736,9 +7736,9 @@
             },
             {
               "ball": "41.6",
-              "batter": "Ezra Pillay",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Ezra Pillay",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7752,9 +7752,9 @@
           "deliveries": [
             {
               "ball": "42.1",
-              "batter": "Hamzah Akabor",
+              "batter": "Ezra Pillay",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Ezra Pillay",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7763,9 +7763,9 @@
             },
             {
               "ball": "42.2",
-              "batter": "Hamzah Akabor",
+              "batter": "Ezra Pillay",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Ezra Pillay",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7774,9 +7774,9 @@
             },
             {
               "ball": "42.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Ezra Pillay",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": null,
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7795,17 +7795,6 @@
             },
             {
               "ball": "42.4",
-              "batter": "Hamzah Akabor",
-              "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Santiago PalaciosFlusk",
-              "runs": {
-                "batter": 1,
-                "extras": 0,
-                "total": 1
-              }
-            },
-            {
-              "ball": "42.5",
               "batter": "Santiago PalaciosFlusk",
               "bowler": "Ulrich Van Der Merwe",
               "non_striker": "Hamzah Akabor",
@@ -7816,10 +7805,21 @@
               }
             },
             {
-              "ball": "42.6",
+              "ball": "42.5",
               "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
               "non_striker": "Santiago PalaciosFlusk",
+              "runs": {
+                "batter": 1,
+                "extras": 0,
+                "total": 1
+              }
+            },
+            {
+              "ball": "42.6",
+              "batter": "Santiago PalaciosFlusk",
+              "bowler": "Ulrich Van Der Merwe",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7833,9 +7833,9 @@
           "deliveries": [
             {
               "ball": "43.1",
-              "batter": "Santiago PalaciosFlusk",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7844,9 +7844,9 @@
             },
             {
               "ball": "43.2",
-              "batter": "Santiago PalaciosFlusk",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Hamzah Akabor",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7855,9 +7855,9 @@
             },
             {
               "ball": "43.3",
-              "batter": "Hamzah Akabor",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Bhavish Saini",
-              "non_striker": "Santiago PalaciosFlusk",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7866,9 +7866,9 @@
             },
             {
               "ball": "43.4",
-              "batter": "Hamzah Akabor",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Bhavish Saini",
-              "non_striker": "Santiago PalaciosFlusk",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7877,9 +7877,9 @@
             },
             {
               "ball": "43.5",
-              "batter": "Hamzah Akabor",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Bhavish Saini",
-              "non_striker": "Santiago PalaciosFlusk",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7888,9 +7888,9 @@
             },
             {
               "ball": "43.6",
-              "batter": "Hamzah Akabor",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Bhavish Saini",
-              "non_striker": "Santiago PalaciosFlusk",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7904,9 +7904,9 @@
           "deliveries": [
             {
               "ball": "44.1",
-              "batter": "Santiago PalaciosFlusk",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": null,
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7925,9 +7925,9 @@
             },
             {
               "ball": "44.2",
-              "batter": "Santiago PalaciosFlusk",
+              "batter": "Chaitu A",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Chaitu A",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7936,9 +7936,9 @@
             },
             {
               "ball": "44.3",
-              "batter": "Santiago PalaciosFlusk",
+              "batter": "Chaitu A",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": null,
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
