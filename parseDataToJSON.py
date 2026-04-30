@@ -329,18 +329,19 @@ def parse_event(full_text, batter_name, is_wicket):
     run_matches = re.findall(r'(\d+)\s*(?:run|runs)', t)
     base_runs = sum(int(n) for n in run_matches) if run_matches else 0
 
+    # =====================================================
+    # WIDE (ENHANCED RUN DETECTION — NO NEW KEYS)
+    # =====================================================
     if "wide" in t:
         wd_match = re.search(r'\b(\d+)\s*wd\b', t)
-        total = int(wd_match.group(1)) if wd_match else 1
-
-        extras["wides"] = total
-        runs["extras"] = total
-        runs["total"] = total
+        wides = int(wd_match.group(1)) if wd_match else 1
+        extras["wides"] = wides
+        runs["batter"] = 0
+        runs["extras"] = wides
+        runs["total"] = wides
         return runs, extras, wickets, False
-
     if "no ball" in t:
         extras["noballs"] = 1
-
         if "leg bye" in t:
             extras["legbyes"] = base_runs
             runs["extras"] = 1 + base_runs
@@ -350,7 +351,6 @@ def parse_event(full_text, batter_name, is_wicket):
         else:
             runs["batter"] = base_runs
             runs["extras"] = 1
-
         runs["total"] = runs["batter"] + runs["extras"]
         return runs, extras, wickets, True
 
@@ -390,15 +390,14 @@ def parse_html(file_path, registry):
         "non_striker": non_striker,
         "incoming_batter": None,
         "last_wicket": None,
-        "apply_new_batter_next_ball": False
+        "apply_new_batter_next_ball": False,
+        "last_ball_was_over_end": False
     }
 
     overs = {}
 
     for node in soup.select("div.border-b"):
         text = clean(node.get_text(" ", strip=True))
-
-        # remove score prefix like "0 0.1"
         text = re.sub(r'^\d+\s+', '', text)
 
         # ------------------------------------------
@@ -422,30 +421,21 @@ def parse_html(file_path, registry):
         over_id, ball_id = match.groups()
 
         # ------------------------------------------
-        # APPLY NEW BATTER (WITH OVER-END LOGIC ✅)
+        # APPLY NEW BATTER
         # ------------------------------------------
         if state["apply_new_batter_next_ball"] and state["incoming_batter"]:
-        
+
             if state["last_wicket"]:
                 was_striker = state["last_wicket"]["was_striker"]
-        
-                # CASE 1: Wicket at end of over
-                if state.get("last_ball_was_over_end"):
-                
-                    if was_striker:
-                        # new batter goes to NON-STRIKER (because of rotation)
+
+                if was_striker:
+                    if state["last_ball_was_over_end"]:
                         state["non_striker"] = state["incoming_batter"]
                     else:
-                        # rare case (runout non-striker)
                         state["striker"] = state["incoming_batter"]
-        
-                # CASE 2: normal (not end of over)
                 else:
-                    if was_striker:
-                        state["striker"] = state["incoming_batter"]
-                    else:
-                        state["non_striker"] = state["incoming_batter"]
-        
+                    state["non_striker"] = state["incoming_batter"]
+
             state["incoming_batter"] = None
             state["last_wicket"] = None
             state["apply_new_batter_next_ball"] = False
@@ -459,6 +449,15 @@ def parse_html(file_path, registry):
 
         bowler = resolve_player(bowler, registry)
         parsed_batter = resolve_player(batter, registry)
+        # ✅ FORCE STRIKER SYNC WITH UI
+        if parsed_batter and state["striker"] != parsed_batter:
+            if parsed_batter == state["non_striker"]:
+                state["striker"], state["non_striker"] = state["non_striker"], state["striker"]
+            else:
+                state["striker"] = parsed_batter
+
+                if state["striker"] is None:
+                    state["striker"] = parsed_batter
 
         is_wicket = "OUT!" in text
 
@@ -480,19 +479,12 @@ def parse_html(file_path, registry):
             state["apply_new_batter_next_ball"] = True
 
         # ------------------------------------------
-        # SAFE FALLBACK (DO NOT OVERRIDE NEW BATTER)
+        # SAFE FALLBACK (FIXED)
         # ------------------------------------------
-        if state["striker"] is None and not state["apply_new_batter_next_ball"]:
-            state["striker"] = parsed_batter
-
-        if state["non_striker"] is None and not state["apply_new_batter_next_ball"]:
+        if state["non_striker"] is None:
             if parsed_batter != state["striker"]:
                 state["non_striker"] = parsed_batter
-            else:
-                state["non_striker"] = "Unknown"
-
-        if state["striker"] == state["non_striker"]:
-            state["non_striker"] = "Unknown"
+            # ❌ DO NOT assign "Unknown"
 
         # ------------------------------------------
         # CREATE DELIVERY
@@ -514,29 +506,22 @@ def parse_html(file_path, registry):
         overs.setdefault(over_id, []).append(delivery)
 
         # ------------------------------------------
-        # REMOVE OUT PLAYER AFTER DELIVERY (SAFE FIX)
+        # STRIKE ROTATION (FINAL CORRECT LOGIC ✅)
         # ------------------------------------------
-        if wickets and state["apply_new_batter_next_ball"]:
-            out_player = state["last_wicket"]["player_out"]
 
-            # only clear if new batter is ready
-            if state["incoming_batter"]:
-                if state["striker"] == out_player:
-                    state["striker"] = None
-                elif state["non_striker"] == out_player:
-                    state["non_striker"] = None
-
-        # ------------------------------------------
-        # STRIKE ROTATION
-        # ------------------------------------------
-        if is_legal and not wickets:
-            if runs["total"] % 2 == 1:
+        if is_legal:
+            # rotate on batter runs only
+            if not wickets and runs.get("batter", 0) % 2 == 1:
                 state["striker"], state["non_striker"] = state["non_striker"], state["striker"]
 
+            # over-end rotation
             if ball_id == "6":
                 state["striker"], state["non_striker"] = state["non_striker"], state["striker"]
-
-    # ✅ FINAL RETURN (MANDATORY)
+                state["last_ball_was_over_end"] = True
+            else:
+                state["last_ball_was_over_end"] = False
+        else:
+            state["last_ball_was_over_end"] = False
     return {
         "team": team_name,
         "overs": [
@@ -544,7 +529,6 @@ def parse_html(file_path, registry):
             for o, d in sorted(overs.items(), key=lambda x: int(x[0]))
         ]
     }
-
 
 # =========================================================
 # MAIN API
