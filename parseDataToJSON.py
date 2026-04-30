@@ -59,21 +59,48 @@ def empty_extras():
 # =========================================================
 
 def extract_players(text):
-    # remove ball prefix if present
+    # remove ball prefix
     text = re.sub(r'^\d+\.\d+\s*', '', text)
 
+    # ------------------------------------------
+    # CLEAN NOISE (IMPORTANT FIX)
+    # ------------------------------------------
+    text = re.sub(
+        r'\b(wd|wides?|nb|no ball|bye|lb)\b\s*\.?\s*',
+        ' ',
+        text,
+        flags=re.IGNORECASE
+    )
+    text = re.sub(r'\b(wides?)\b', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'[^\w\s\.]', ' ', text)   # remove weird symbols except dot
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    # ------------------------------------------
+    # NORMAL SPLIT
+    # ------------------------------------------
     if " to " not in text:
         return None, None
 
     try:
         bowler_raw, rest = text.split(" to ", 1)
-        batter_raw = rest.split(",")[0]
+        batter_raw = re.split(
+            r'\b(run|runs|out|lbw|b|c|st|wide|wd|nb|no ball|four|six)\b',
+            rest,
+            flags=re.IGNORECASE
+        )[0]
 
-        return clean_player_name(bowler_raw), clean_player_name(batter_raw)
+        bowler = clean_player_name(bowler_raw)
+        batter = clean_player_name(batter_raw)
+
+        # ❌ extra safety: reject garbage like "wd"
+        if bowler and len(bowler) <= 2:
+            bowler = None
+        if batter and len(batter) <= 2:
+            batter = None
+
+        return bowler, batter
     except:
         return None, None
-    
-
 def generate_aliases(name):
     aliases = set()
     if not name:
@@ -93,23 +120,51 @@ def clean_player_name(name):
     if not name:
         return None
 
+    # remove brackets
     name = re.sub(r'\(.*?\)', '', name)
+
+    # remove comma suffix
     name = name.split(",")[0]
-    name = re.sub(r'\b(PM|AM|WIDE|NB|LB|BYE|OUT|FOUR|SIX)\b.*', '', name, flags=re.IGNORECASE)
+
+    # remove cricket noise words
+    name = re.sub(
+        r'\b(PM|AM|WIDE|WIDES|WD|NB|LB|BYE|RUN|RUNS|OUT|FOUR|SIX)\b',
+        '',
+        name,
+        flags=re.IGNORECASE
+    )
+
+    # remove prefixes like "wd .", "nb .", etc.
+    name = re.sub(r'^(wd|nb|wide|no ball)\s*\.?\s*', '', name, flags=re.IGNORECASE)
+
+    # remove any remaining non-letter prefix
+    name = re.sub(r'^[^A-Za-z]+', '', name)   #remove leading junk
     name = re.sub(r'[^A-Za-z\s\.]', '', name)
 
-    return clean(name)
+    # collapse spaces
+    name = clean(name)
 
+    return name if name else None
 
 def clean_player_out(name):
     if not name:
         return None
 
-    name = re.sub(r'^(run\s*[- ]?out\s*)', '', name, flags=re.IGNORECASE)
-    name = re.sub(r'^(out\s*)', '', name, flags=re.IGNORECASE)
-    return clean(name)
+    name = name.lower()
 
+    # remove dismissal words
+    name = re.sub(r'\b(lbw|bowled|caught|stumped|c|b|st)\b', '', name)
 
+    # remove run out prefix
+    name = re.sub(r'run\s*[- ]?out', '', name)
+
+    # remove "out"
+    name = re.sub(r'\bout\b', '', name)
+
+    # cleanup
+    name = re.sub(r'\s+', ' ', name).strip()
+
+    return name.title()
 def resolve_player(name, registry):
     if not name:
         return None
@@ -175,8 +230,13 @@ def extract_dismissal_text(text):
     if "OUT!" in text:
         text = text.split("OUT!", 1)[1]
 
-    text = re.sub(r'\b(CATCH|BOWLED|LBW|STUMPED)\b', '', text, flags=re.IGNORECASE)
-    text = re.split(r'\d+\s*\(', text)[0]
+    # 🔥 remove stats junk
+    text = re.sub(r'balls?.*', '', text, flags=re.IGNORECASE)
+
+    # 🔥 remove leading junk
+    text = re.sub(r'^[^A-Za-z]+', '', text)
+
+    text = re.sub(r'\s+', ' ', text)
     return clean(text)
 
 # =========================================================
@@ -255,31 +315,17 @@ def parse_event(full_text, batter_name, is_wicket):
     # =====================================================
     if is_wicket:
         dismissal_text = extract_dismissal_text(full_text)
+        dt = dismissal_text.lower()
 
-        # CAUGHT
-        m = re.search(r'^([A-Za-z\s\.]+?)\s+c\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', dismissal_text)
-        if m:
-            wickets.append({
-                "kind": "caught",
-                "player_out": clean(m.group(1)),
-                "fielders": [clean(m.group(2))],
-                "bowler": clean(m.group(3))
-            })
-
-        # STUMPED
-        elif re.search(r'\bst\b', dismissal_text, re.IGNORECASE):
-            m = re.search(r'^([A-Za-z\s\.]+?)\s+st\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', dismissal_text, re.IGNORECASE)
-            if m:
-                wickets.append({
-                    "kind": "stumped",
-                    "player_out": clean(m.group(1)),
-                    "fielders": [clean(m.group(2))],
-                    "bowler": clean(m.group(3))
-                })
-
-        # RUN OUT
-        elif "run out" in t:
-            m = re.search(r'^([A-Za-z\s\.]+)\s+run\s*[- ]?out\s*\(([^)]+)\)', dismissal_text, re.IGNORECASE)
+        # -----------------------------------------------------
+        # 1. RUN OUT (highest priority)
+        # -----------------------------------------------------
+        if "run out" in dt:
+            m = re.search(
+                r'^([A-Za-z\s\.]+)\s+run\s*[- ]?out\s*\(([^)]+)\)',
+                dismissal_text,
+                re.IGNORECASE
+            )
 
             if m:
                 wickets.append({
@@ -293,36 +339,89 @@ def parse_event(full_text, batter_name, is_wicket):
                     "player_out": batter_name
                 })
 
-        # LBW
-        elif "lbw" in dismissal_text.lower():
-            m = re.search(r'^([A-Za-z\s\.]+?)\s+lbw\s+b\s+([A-Za-z\s\.]+)', dismissal_text, re.IGNORECASE)
-            if m:
-                wickets.append({
-                    "kind": "lbw",
-                    "player_out": clean(m.group(1)),
-                    "bowler": clean(m.group(2))
-                })
-
-        # BOWLED
-        elif re.search(r'\sb\s+', dismissal_text):
-            m = re.search(r'^([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)', dismissal_text)
-            if m:
-                wickets.append({
-                    "kind": "bowled",
-                    "player_out": clean(m.group(1)),
-                    "bowler": clean(m.group(2))
-                })
-
+        # -----------------------------------------------------
+        # 2. CAUGHT
+        # -----------------------------------------------------
         else:
-            wickets.append({
-                "kind": "unknown",
-                "player_out": extract_dismissal_text(full_text)
-            })
+            m = re.search(
+                r'^([A-Za-z\s\.]+?)\s+c\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)',
+                dismissal_text
+            )
 
-        # FIXED: always return immediately after wicket parsing
-        if wickets:
-            return runs, extras, wickets, True
+            if m:
+                wickets.append({
+                    "kind": "caught",
+                    "player_out": clean_player_out(m.group(1)),
+                    "fielders": [clean(m.group(2))],
+                    "bowler": clean(m.group(3))
+                })
 
+            # -------------------------------------------------
+            # 3. STUMPED
+            # -------------------------------------------------
+            elif re.search(r'\bst\b', dt):
+                m = re.search(
+                    r'^([A-Za-z\s\.]+?)\s+st\s+([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)',
+                    dismissal_text,
+                    re.IGNORECASE
+                )
+
+                if m:
+                    wickets.append({
+                        "kind": "stumped",
+                        "player_out": clean_player_out(m.group(1)),
+                        "fielders": [clean(m.group(2))],
+                        "bowler": clean(m.group(3))
+                    })
+
+            # -------------------------------------------------
+            # 4. LBW (must come BEFORE bowled)
+            # -------------------------------------------------
+            elif "lbw" in dt:
+                m = re.search(
+                    r'([A-Za-z\s\.]+?)\s+lbw\s+b\s+([A-Za-z\s\.]+)',
+                    dismissal_text,
+                    re.IGNORECASE
+                )
+
+                if m:
+                    wickets.append({
+                        "kind": "lbw",
+                        "player_out": clean_player_out(m.group(1)),
+                        "bowler": clean(m.group(2))
+                    })
+                else:
+                    wickets.append({
+                        "kind": "lbw",
+                        "player_out": batter_name
+                    })
+
+            # -------------------------------------------------
+            # 5. BOWLED (LAST)
+            # -------------------------------------------------
+            elif re.search(r'\sb\s+', dismissal_text):
+                m = re.search(
+                    r'^([A-Za-z\s\.]+?)\s+b\s+([A-Za-z\s\.]+)',
+                    dismissal_text
+                )
+
+                if m:
+                    wickets.append({
+                        "kind": "bowled",
+                        "player_out": clean_player_out(m.group(1)),
+                        "bowler": clean(m.group(2))
+                    })
+
+            # -------------------------------------------------
+            # UNKNOWN
+            # -------------------------------------------------
+            else:
+                wickets.append({
+                    "kind": "unknown",
+                    "player_out": dismissal_text
+                })
+
+        return runs, extras, wickets, True
     # =====================================================
     # RUNS
     # =====================================================

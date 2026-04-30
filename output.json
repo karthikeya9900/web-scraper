@@ -8,8 +8,8 @@
     "decision": "field"
   },
   "teams": [
-    "U12 Gauteng East ONE",
-    "U12 Gauteng North TWO"
+    "U12 Gauteng North TWO",
+    "U12 Gauteng East ONE"
   ],
   "player_registry": {
     "jordan_de_smidt": {
@@ -23,121 +23,121 @@
     "arshavin_rampersad": {
       "full_name": "Arshavin Rampersad",
       "aliases": [
-        "A. Rampersad",
+        "Arshavin Rampersad",
         "AR",
-        "Arshavin Rampersad"
+        "A. Rampersad"
       ]
     },
     "frederik_du_plessis": {
       "full_name": "Frederik Du Plessis",
       "aliases": [
+        "Frederik Du Plessis",
         "F. Du Plessis",
-        "FDP",
-        "Frederik Du Plessis"
+        "FDP"
       ]
     },
     "simeon_kleynhans": {
       "full_name": "Simeon Kleynhans",
       "aliases": [
+        "Simeon Kleynhans",
         "S. Kleynhans",
-        "SK",
-        "Simeon Kleynhans"
+        "SK"
       ]
     },
     "tyler_mncube": {
       "full_name": "Tyler Mncube",
       "aliases": [
-        "Tyler Mncube",
         "T. Mncube",
+        "Tyler Mncube",
         "TM"
       ]
     },
     "thomas_brevis": {
       "full_name": "Thomas Brevis",
       "aliases": [
-        "T. Brevis",
+        "Thomas Brevis",
         "TB",
-        "Thomas Brevis"
+        "T. Brevis"
       ]
     },
     "ulrich_van_der_merwe": {
       "full_name": "Ulrich Van Der Merwe",
       "aliases": [
-        "U. Van Der Merwe",
         "UVDM",
-        "Ulrich Van Der Merwe"
+        "Ulrich Van Der Merwe",
+        "U. Van Der Merwe"
       ]
     },
     "qhayiya_poswa": {
       "full_name": "Qhayiya Poswa",
       "aliases": [
+        "QP",
         "Qhayiya Poswa",
-        "Q. Poswa",
-        "QP"
+        "Q. Poswa"
       ]
     },
     "bhavish_saini": {
       "full_name": "Bhavish Saini",
       "aliases": [
-        "Bhavish Saini",
         "B. Saini",
+        "Bhavish Saini",
         "BS"
       ]
     },
     "derick_nelson": {
       "full_name": "Derick Nelson",
       "aliases": [
+        "D. Nelson",
         "Derick Nelson",
-        "DN",
-        "D. Nelson"
+        "DN"
       ]
     },
     "sean_rowles": {
       "full_name": "Sean Rowles",
       "aliases": [
         "S. Rowles",
-        "SR",
-        "Sean Rowles"
+        "Sean Rowles",
+        "SR"
       ]
     },
     "caleb_allan": {
       "full_name": "Caleb Allan",
       "aliases": [
-        "CA",
+        "C. Allan",
         "Caleb Allan",
-        "C. Allan"
+        "CA"
       ]
     },
     "sri_sadineni": {
       "full_name": "Sri Sadineni",
       "aliases": [
-        "Sri Sadineni",
         "SS",
-        "S. Sadineni"
+        "S. Sadineni",
+        "Sri Sadineni"
       ]
     },
     "hamzah_akabor": {
       "full_name": "Hamzah Akabor",
       "aliases": [
-        "H. Akabor",
         "Hamzah Akabor",
+        "H. Akabor",
         "HA"
       ]
     },
     "ethan_matjekane": {
       "full_name": "Ethan Matjekane",
       "aliases": [
-        "Ethan Matjekane",
         "E. Matjekane",
-        "EM"
+        "EM",
+        "Ethan Matjekane"
       ]
     },
     "ezra_pillay": {
       "full_name": "Ezra Pillay",
       "aliases": [
         "EP",
-        "Ezra Pillay",
-        "E. Pillay"
+        "E. Pillay",
+        "Ezra Pillay"
       ]
     },
     "santiago_palaciosflusk": {
@@ -151,8 +151,8 @@
     "chaitu_a": {
       "full_name": "Chaitu A",
       "aliases": [
-        "Chaitu A",
         "C. A",
+        "Chaitu A",
         "CA"
       ]
     }
@@ -874,7 +874,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Bion Meyer",
+                  "player_out": "Catch Bion Meyer",
                   "fielders": [
                     "Jordan D"
                   ],
@@ -1580,7 +1580,7 @@
             },
             {
               "ball": "18.2",
-              "batter": "Karel J WIDES",
+              "batter": "Karel J",
               "bowler": "wd . Ethan M",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1599,7 +1599,7 @@
               "ball": "18.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Karel J WIDES",
+              "non_striker": "Karel J",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2196,7 +2196,7 @@
             },
             {
               "ball": "25.2",
-              "batter": "Simeon K WIDES",
+              "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
               "non_striker": "Karel J",
               "runs": {
@@ -2215,7 +2215,7 @@
               "ball": "25.2",
               "batter": "Karel J",
               "bowler": "Chaitu A",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -2226,7 +2226,7 @@
               "ball": "25.3",
               "batter": "Karel J",
               "bowler": "Chaitu A",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2237,7 +2237,7 @@
               "ball": "25.4",
               "batter": "Karel J",
               "bowler": "Chaitu A",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 6,
                 "extras": 0,
@@ -2248,7 +2248,7 @@
               "ball": "25.5",
               "batter": "Karel J",
               "bowler": "Chaitu A",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2259,7 +2259,7 @@
               "ball": "25.6",
               "batter": "Karel J",
               "bowler": "Chaitu A",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2275,7 +2275,7 @@
               "ball": "26.1",
               "batter": "Karel J",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2286,7 +2286,7 @@
               "ball": "26.2",
               "batter": "Karel J",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2297,7 +2297,7 @@
               "ball": "26.3",
               "batter": "Karel J",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2308,7 +2308,7 @@
               "ball": "26.4",
               "batter": "Karel J",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2319,7 +2319,7 @@
               "ball": "26.5",
               "batter": "Karel J",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Simeon K WIDES",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2702,7 +2702,7 @@
           "deliveries": [
             {
               "ball": "31.1",
-              "batter": "Karel J WIDES",
+              "batter": "Karel J",
               "bowler": "wd . Santiago P",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2721,7 +2721,7 @@
               "ball": "31.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Karel J WIDES",
+              "non_striker": "Karel J",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2732,7 +2732,7 @@
               "ball": "31.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Karel J WIDES",
+              "non_striker": "Karel J",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2743,7 +2743,7 @@
               "ball": "31.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Karel J WIDES",
+              "non_striker": "Karel J",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2754,7 +2754,7 @@
               "ball": "31.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Karel J WIDES",
+              "non_striker": "Karel J",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2765,7 +2765,7 @@
               "ball": "31.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Karel J WIDES",
+              "non_striker": "Karel J",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3689,7 +3689,7 @@
               },
               "wickets": [
                 {
-                  "kind": "bowled",
+                  "kind": "lbw",
                   "player_out": "Karel Jan Doyer",
                   "bowler": "Sean R"
                 }
@@ -3938,7 +3938,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Derick Nelson",
+                  "player_out": "Catch Derick Nelson",
                   "fielders": [
                     "Sean R"
                   ],
@@ -4994,7 +4994,7 @@
             },
             {
               "ball": "9.3",
-              "batter": "Arshavin R WIDES",
+              "batter": "Arshavin Rampersad",
               "bowler": "Thomas Brevis",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5013,7 +5013,7 @@
               "ball": "9.3",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin R WIDES",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -5030,7 +5030,7 @@
               "ball": "9.3",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin R WIDES",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -5047,7 +5047,7 @@
               "ball": "9.3",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin R WIDES",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5058,7 +5058,7 @@
               "ball": "9.4",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin R WIDES",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5069,7 +5069,7 @@
               "ball": "9.5",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin R WIDES",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -5086,7 +5086,7 @@
               "ball": "9.5",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin R WIDES",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5097,7 +5097,7 @@
               "ball": "9.6",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin R WIDES",
+              "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6681,7 +6681,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Jordan De Smidt",
+                  "player_out": "Catch Jordan De Smidt",
                   "fielders": [
                     "Derick N"
                   ],
@@ -6872,7 +6872,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Qhayiya Poswa",
+                  "player_out": "Catch Qhayiya Poswa",
                   "fielders": [
                     "Simeon K"
                   ],
@@ -7600,7 +7600,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Sri Sadineni",
+                  "player_out": "Catch Sri Sadineni",
                   "fielders": [
                     "Lesedi M"
                   ],
@@ -7785,7 +7785,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Ezra Pillay",
+                  "player_out": "Catch Ezra Pillay",
                   "fielders": [
                     "Derick N"
                   ],
@@ -7915,7 +7915,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Hamzah Akabor",
+                  "player_out": "Catch Hamzah Akabor",
                   "fielders": [
                     "Thomas B"
                   ],
@@ -7947,7 +7947,7 @@
               "wickets": [
                 {
                   "kind": "caught",
-                  "player_out": "Chaitu A",
+                  "player_out": "Catch Chaitu A",
                   "fielders": [
                     "Frederik D"
                   ],
