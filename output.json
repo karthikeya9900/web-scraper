@@ -7,154 +7,79 @@
     "winner": "Gauteng East ONE",
     "decision": "field"
   },
-  "teams": [
-    "U12 Gauteng North TWO",
-    "U12 Gauteng East ONE"
-  ],
+  "teams": ["U12 Gauteng North TWO", "U12 Gauteng East ONE"],
   "player_registry": {
     "jordan_de_smidt": {
       "full_name": "Jordan De Smidt",
-      "aliases": [
-        "J. De Smidt",
-        "Jordan De Smidt",
-        "JDS"
-      ]
+      "aliases": ["Jordan De Smidt", "JDS", "J. De Smidt"]
     },
     "arshavin_rampersad": {
       "full_name": "Arshavin Rampersad",
-      "aliases": [
-        "Arshavin Rampersad",
-        "AR",
-        "A. Rampersad"
-      ]
+      "aliases": ["AR", "Arshavin Rampersad", "A. Rampersad"]
     },
     "frederik_du_plessis": {
       "full_name": "Frederik Du Plessis",
-      "aliases": [
-        "Frederik Du Plessis",
-        "F. Du Plessis",
-        "FDP"
-      ]
+      "aliases": ["Frederik Du Plessis", "FDP", "F. Du Plessis"]
     },
     "simeon_kleynhans": {
       "full_name": "Simeon Kleynhans",
-      "aliases": [
-        "Simeon Kleynhans",
-        "S. Kleynhans",
-        "SK"
-      ]
+      "aliases": ["S. Kleynhans", "Simeon Kleynhans", "SK"]
     },
     "tyler_mncube": {
       "full_name": "Tyler Mncube",
-      "aliases": [
-        "T. Mncube",
-        "Tyler Mncube",
-        "TM"
-      ]
+      "aliases": ["TM", "Tyler Mncube", "T. Mncube"]
     },
     "thomas_brevis": {
       "full_name": "Thomas Brevis",
-      "aliases": [
-        "Thomas Brevis",
-        "TB",
-        "T. Brevis"
-      ]
+      "aliases": ["Thomas Brevis", "TB", "T. Brevis"]
     },
     "ulrich_van_der_merwe": {
       "full_name": "Ulrich Van Der Merwe",
-      "aliases": [
-        "UVDM",
-        "Ulrich Van Der Merwe",
-        "U. Van Der Merwe"
-      ]
+      "aliases": ["Ulrich Van Der Merwe", "U. Van Der Merwe", "UVDM"]
     },
     "qhayiya_poswa": {
       "full_name": "Qhayiya Poswa",
-      "aliases": [
-        "QP",
-        "Qhayiya Poswa",
-        "Q. Poswa"
-      ]
+      "aliases": ["Q. Poswa", "QP", "Qhayiya Poswa"]
     },
     "bhavish_saini": {
       "full_name": "Bhavish Saini",
-      "aliases": [
-        "B. Saini",
-        "Bhavish Saini",
-        "BS"
-      ]
+      "aliases": ["Bhavish Saini", "BS", "B. Saini"]
     },
     "derick_nelson": {
       "full_name": "Derick Nelson",
-      "aliases": [
-        "D. Nelson",
-        "Derick Nelson",
-        "DN"
-      ]
+      "aliases": ["DN", "D. Nelson", "Derick Nelson"]
     },
     "sean_rowles": {
       "full_name": "Sean Rowles",
-      "aliases": [
-        "S. Rowles",
-        "Sean Rowles",
-        "SR"
-      ]
+      "aliases": ["SR", "Sean Rowles", "S. Rowles"]
     },
     "caleb_allan": {
       "full_name": "Caleb Allan",
-      "aliases": [
-        "C. Allan",
-        "Caleb Allan",
-        "CA"
-      ]
+      "aliases": ["CA", "Caleb Allan", "C. Allan"]
     },
     "sri_sadineni": {
       "full_name": "Sri Sadineni",
-      "aliases": [
-        "SS",
-        "S. Sadineni",
-        "Sri Sadineni"
-      ]
+      "aliases": ["Sri Sadineni", "SS", "S. Sadineni"]
     },
     "hamzah_akabor": {
       "full_name": "Hamzah Akabor",
-      "aliases": [
-        "Hamzah Akabor",
-        "H. Akabor",
-        "HA"
-      ]
+      "aliases": ["H. Akabor", "Hamzah Akabor", "HA"]
     },
     "ethan_matjekane": {
       "full_name": "Ethan Matjekane",
-      "aliases": [
-        "E. Matjekane",
-        "EM",
-        "Ethan Matjekane"
-      ]
+      "aliases": ["E. Matjekane", "Ethan Matjekane", "EM"]
     },
     "ezra_pillay": {
       "full_name": "Ezra Pillay",
-      "aliases": [
-        "EP",
-        "E. Pillay",
-        "Ezra Pillay"
-      ]
+      "aliases": ["EP", "Ezra Pillay", "E. Pillay"]
     },
     "santiago_palaciosflusk": {
       "full_name": "Santiago PalaciosFlusk",
-      "aliases": [
-        "Santiago PalaciosFlusk",
-        "SP",
-        "S. PalaciosFlusk"
-      ]
+      "aliases": ["S. PalaciosFlusk", "SP", "Santiago PalaciosFlusk"]
     },
     "chaitu_a": {
       "full_name": "Chaitu A",
-      "aliases": [
-        "C. A",
-        "Chaitu A",
-        "CA"
-      ]
+      "aliases": ["C. A", "Chaitu A", "CA"]
     }
   },
   "innings": [
@@ -875,9 +800,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Bion Meyer",
-                  "fielders": [
-                    "Jordan D"
-                  ],
+                  "fielders": ["Jordan D"],
                   "bowler": "Ezra P"
                 }
               ]
@@ -3378,10 +3301,7 @@
                 {
                   "kind": "run out",
                   "player_out": "Simeon Kleynhans",
-                  "fielders": [
-                    "Sean R",
-                    "Chaitu A"
-                  ]
+                  "fielders": ["Sean R", "Chaitu A"]
                 }
               ]
             },
@@ -3939,9 +3859,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Derick Nelson",
-                  "fielders": [
-                    "Sean R"
-                  ],
+                  "fielders": ["Sean R"],
                   "bowler": "Ty P"
                 }
               ]
@@ -3960,9 +3878,7 @@
                 {
                   "kind": "run out",
                   "player_out": "Bhavish Saini",
-                  "fielders": [
-                    "Ty P"
-                  ]
+                  "fielders": ["Ty P"]
                 }
               ]
             },
@@ -6682,9 +6598,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Jordan De Smidt",
-                  "fielders": [
-                    "Derick N"
-                  ],
+                  "fielders": ["Derick N"],
                   "bowler": "Thomas B"
                 }
               ]
@@ -6873,9 +6787,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Qhayiya Poswa",
-                  "fielders": [
-                    "Simeon K"
-                  ],
+                  "fielders": ["Simeon K"],
                   "bowler": "Thomas B"
                 }
               ]
@@ -6988,9 +6900,7 @@
                 {
                   "kind": "run out",
                   "player_out": "Sean Rowles",
-                  "fielders": [
-                    "Tyler M"
-                  ]
+                  "fielders": ["Tyler M"]
                 }
               ]
             },
@@ -7601,9 +7511,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Sri Sadineni",
-                  "fielders": [
-                    "Lesedi M"
-                  ],
+                  "fielders": ["Lesedi M"],
                   "bowler": "Ulrich V"
                 }
               ]
@@ -7677,9 +7585,7 @@
                 {
                   "kind": "stumped",
                   "player_out": "Ethan Matjekane",
-                  "fielders": [
-                    "Karel J"
-                  ],
+                  "fielders": ["Karel J"],
                   "bowler": "Bhavish S"
                 }
               ]
@@ -7786,9 +7692,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Ezra Pillay",
-                  "fielders": [
-                    "Derick N"
-                  ],
+                  "fielders": ["Derick N"],
                   "bowler": "Ulrich V"
                 }
               ]
@@ -7916,9 +7820,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Hamzah Akabor",
-                  "fielders": [
-                    "Thomas B"
-                  ],
+                  "fielders": ["Thomas B"],
                   "bowler": "Ulrich V"
                 }
               ]
@@ -7948,9 +7850,7 @@
                 {
                   "kind": "caught",
                   "player_out": "Catch Chaitu A",
-                  "fielders": [
-                    "Frederik D"
-                  ],
+                  "fielders": ["Frederik D"],
                   "bowler": "Ulrich V"
                 }
               ]
