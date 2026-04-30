@@ -29,6 +29,7 @@ def normalize_name(name):
         return ""
 
     name = name.lower()
+    name = name.replace("-", " ")
     name = re.sub(r'[^a-z\s]', '', name)
     name = re.sub(r'\s+', ' ', name).strip()
     return name
@@ -58,18 +59,20 @@ def empty_extras():
 # =========================================================
 
 def extract_players(text):
-    m = re.search(r'(\d+\.\d+)\s+(.*)', text)
-    if not m:
+    # remove ball prefix if present
+    text = re.sub(r'^\d+\.\d+\s*', '', text)
+
+    if " to " not in text:
         return None, None
 
-    line = m.group(2).split(",")[0]
+    try:
+        bowler_raw, rest = text.split(" to ", 1)
+        batter_raw = rest.split(",")[0]
 
-    if " to " not in line:
+        return clean_player_name(bowler_raw), clean_player_name(batter_raw)
+    except:
         return None, None
-
-    bowler_raw, batter_raw = line.split(" to ")
-    return clean_player_name(bowler_raw), clean_player_name(batter_raw)
-
+    
 
 def generate_aliases(name):
     aliases = set()
@@ -385,7 +388,9 @@ def parse_html(file_path, registry):
     state = {
         "striker": striker,
         "non_striker": non_striker,
-        "pending_batter": None
+        "incoming_batter": None,
+        "last_wicket": None,
+        "apply_new_batter_next_ball": False
     }
 
     overs = {}
@@ -393,23 +398,52 @@ def parse_html(file_path, registry):
     for node in soup.select("div.border-b"):
         text = clean(node.get_text(" ", strip=True))
 
+        # remove score prefix like "0 0.1"
+        text = re.sub(r'^\d+\s+', '', text)
+
+        # ------------------------------------------
+        # NEW BATTER ENTRY
+        # ------------------------------------------
         if "comes to the crease" in text:
             new_player = clean_player_name(text.split("comes")[0])
-            state["pending_batter"] = resolve_player(new_player, registry)
+            resolved = resolve_player(new_player, registry)
+
+            if resolved:
+                state["incoming_batter"] = resolved
             continue
 
+        # ------------------------------------------
+        # DELIVERY DETECTION
+        # ------------------------------------------
         match = re.search(r'(\d+)\.(\d+)', text)
         if not match:
             continue
 
         over_id, ball_id = match.groups()
 
+        # ------------------------------------------
+        # APPLY NEW BATTER (ONLY BEFORE DELIVERY)
+        # ------------------------------------------
+        if state["apply_new_batter_next_ball"] and state["incoming_batter"]:
+            if state["last_wicket"]:
+                if state["last_wicket"]["was_striker"]:
+                    state["striker"] = state["incoming_batter"]
+                else:
+                    state["non_striker"] = state["incoming_batter"]
+
+            state["incoming_batter"] = None
+            state["last_wicket"] = None
+            state["apply_new_batter_next_ball"] = False
+
+        # ------------------------------------------
+        # EXTRACT PLAYERS
+        # ------------------------------------------
         bowler, batter = extract_players(text)
         if not bowler or not batter:
             continue
 
         bowler = resolve_player(bowler, registry)
-        batter = resolve_player(batter, registry)
+        parsed_batter = resolve_player(batter, registry)
 
         is_wicket = "OUT!" in text
 
@@ -417,25 +451,42 @@ def parse_html(file_path, registry):
             text, state["striker"], is_wicket
         )
 
-        out_player = None
+        # ------------------------------------------
+        # WICKET HANDLING
+        # ------------------------------------------
         if wickets:
-            out_player = wickets[0]["player_out"]
+            out_player = resolve_player(wickets[0]["player_out"], registry)
+
+            state["last_wicket"] = {
+                "player_out": out_player,
+                "was_striker": (state["striker"] == out_player)
+            }
+
+            state["apply_new_batter_next_ball"] = True
 
             if state["striker"] == out_player:
                 state["striker"] = None
             elif state["non_striker"] == out_player:
                 state["non_striker"] = None
 
-        if state["striker"] is None:
-            state["striker"] = state["pending_batter"] or batter
-            state["pending_batter"] = None
+        # ------------------------------------------
+        # SAFE FALLBACK (DO NOT OVERRIDE NEW BATTER)
+        # ------------------------------------------
+        if state["striker"] is None and not state["apply_new_batter_next_ball"]:
+            state["striker"] = parsed_batter
 
-        if state["non_striker"] is None:
-            state["non_striker"] = batter if batter != state["striker"] else "Unknown"
+        if state["non_striker"] is None and not state["apply_new_batter_next_ball"]:
+            if parsed_batter != state["striker"]:
+                state["non_striker"] = parsed_batter
+            else:
+                state["non_striker"] = "Unknown"
 
         if state["striker"] == state["non_striker"]:
             state["non_striker"] = "Unknown"
 
+        # ------------------------------------------
+        # CREATE DELIVERY
+        # ------------------------------------------
         delivery = {
             "ball": f"{over_id}.{ball_id}",
             "batter": state["striker"],
@@ -452,6 +503,20 @@ def parse_html(file_path, registry):
 
         overs.setdefault(over_id, []).append(delivery)
 
+        # ------------------------------------------
+        # REMOVE OUT PLAYER AFTER DELIVERY (CRITICAL FIX)
+        # ------------------------------------------
+        if wickets:
+            out_player = state["last_wicket"]["player_out"]
+        
+            if state["striker"] == out_player:
+                state["striker"] = None
+            elif state["non_striker"] == out_player:
+                state["non_striker"] = None
+
+        # ------------------------------------------
+        # STRIKE ROTATION
+        # ------------------------------------------
         if is_legal:
             if runs["total"] % 2 == 1:
                 state["striker"], state["non_striker"] = state["non_striker"], state["striker"]
@@ -459,6 +524,7 @@ def parse_html(file_path, registry):
             if ball_id == "6":
                 state["striker"], state["non_striker"] = state["non_striker"], state["striker"]
 
+    # ✅ FINAL RETURN (MANDATORY)
     return {
         "team": team_name,
         "overs": [
@@ -466,6 +532,7 @@ def parse_html(file_path, registry):
             for o, d in sorted(overs.items(), key=lambda x: int(x[0]))
         ]
     }
+
 
 # =========================================================
 # MAIN API

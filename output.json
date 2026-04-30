@@ -7,79 +7,154 @@
     "winner": "Gauteng East ONE",
     "decision": "field"
   },
-  "teams": ["U12 Gauteng North TWO", "U12 Gauteng East ONE"],
+  "teams": [
+    "U12 Gauteng North TWO",
+    "U12 Gauteng East ONE"
+  ],
   "player_registry": {
     "jordan_de_smidt": {
       "full_name": "Jordan De Smidt",
-      "aliases": ["JDS", "Jordan De Smidt", "J. De Smidt"]
+      "aliases": [
+        "JDS",
+        "Jordan De Smidt",
+        "J. De Smidt"
+      ]
     },
     "arshavin_rampersad": {
       "full_name": "Arshavin Rampersad",
-      "aliases": ["AR", "Arshavin Rampersad", "A. Rampersad"]
+      "aliases": [
+        "AR",
+        "A. Rampersad",
+        "Arshavin Rampersad"
+      ]
     },
     "frederik_du_plessis": {
       "full_name": "Frederik Du Plessis",
-      "aliases": ["F. Du Plessis", "FDP", "Frederik Du Plessis"]
+      "aliases": [
+        "Frederik Du Plessis",
+        "F. Du Plessis",
+        "FDP"
+      ]
     },
     "simeon_kleynhans": {
       "full_name": "Simeon Kleynhans",
-      "aliases": ["SK", "S. Kleynhans", "Simeon Kleynhans"]
+      "aliases": [
+        "Simeon Kleynhans",
+        "S. Kleynhans",
+        "SK"
+      ]
     },
     "tyler_mncube": {
       "full_name": "Tyler Mncube",
-      "aliases": ["TM", "Tyler Mncube", "T. Mncube"]
+      "aliases": [
+        "TM",
+        "T. Mncube",
+        "Tyler Mncube"
+      ]
     },
     "thomas_brevis": {
       "full_name": "Thomas Brevis",
-      "aliases": ["Thomas Brevis", "T. Brevis", "TB"]
+      "aliases": [
+        "TB",
+        "T. Brevis",
+        "Thomas Brevis"
+      ]
     },
     "ulrich_van_der_merwe": {
       "full_name": "Ulrich Van Der Merwe",
-      "aliases": ["UVDM", "U. Van Der Merwe", "Ulrich Van Der Merwe"]
+      "aliases": [
+        "UVDM",
+        "Ulrich Van Der Merwe",
+        "U. Van Der Merwe"
+      ]
     },
     "qhayiya_poswa": {
       "full_name": "Qhayiya Poswa",
-      "aliases": ["Q. Poswa", "QP", "Qhayiya Poswa"]
+      "aliases": [
+        "Qhayiya Poswa",
+        "QP",
+        "Q. Poswa"
+      ]
     },
     "bhavish_saini": {
       "full_name": "Bhavish Saini",
-      "aliases": ["B. Saini", "Bhavish Saini", "BS"]
+      "aliases": [
+        "Bhavish Saini",
+        "BS",
+        "B. Saini"
+      ]
     },
     "derick_nelson": {
       "full_name": "Derick Nelson",
-      "aliases": ["DN", "D. Nelson", "Derick Nelson"]
+      "aliases": [
+        "DN",
+        "D. Nelson",
+        "Derick Nelson"
+      ]
     },
     "sean_rowles": {
       "full_name": "Sean Rowles",
-      "aliases": ["S. Rowles", "Sean Rowles", "SR"]
+      "aliases": [
+        "Sean Rowles",
+        "SR",
+        "S. Rowles"
+      ]
     },
     "caleb_allan": {
       "full_name": "Caleb Allan",
-      "aliases": ["C. Allan", "Caleb Allan", "CA"]
+      "aliases": [
+        "C. Allan",
+        "CA",
+        "Caleb Allan"
+      ]
     },
     "sri_sadineni": {
       "full_name": "Sri Sadineni",
-      "aliases": ["S. Sadineni", "Sri Sadineni", "SS"]
+      "aliases": [
+        "SS",
+        "Sri Sadineni",
+        "S. Sadineni"
+      ]
     },
     "hamzah_akabor": {
       "full_name": "Hamzah Akabor",
-      "aliases": ["Hamzah Akabor", "H. Akabor", "HA"]
+      "aliases": [
+        "HA",
+        "Hamzah Akabor",
+        "H. Akabor"
+      ]
     },
     "ethan_matjekane": {
       "full_name": "Ethan Matjekane",
-      "aliases": ["EM", "Ethan Matjekane", "E. Matjekane"]
+      "aliases": [
+        "Ethan Matjekane",
+        "EM",
+        "E. Matjekane"
+      ]
     },
     "ezra_pillay": {
       "full_name": "Ezra Pillay",
-      "aliases": ["E. Pillay", "EP", "Ezra Pillay"]
+      "aliases": [
+        "Ezra Pillay",
+        "E. Pillay",
+        "EP"
+      ]
     },
     "santiago_palaciosflusk": {
       "full_name": "Santiago PalaciosFlusk",
-      "aliases": ["SP", "S. PalaciosFlusk", "Santiago PalaciosFlusk"]
+      "aliases": [
+        "S. PalaciosFlusk",
+        "SP",
+        "Santiago PalaciosFlusk"
+      ]
     },
     "chaitu_a": {
       "full_name": "Chaitu A",
-      "aliases": ["Chaitu A", "CA", "C. A"]
+      "aliases": [
+        "C. A",
+        "CA",
+        "Chaitu A"
+      ]
     }
   },
   "innings": [
@@ -125,7 +200,7 @@
             {
               "ball": "0.4",
               "batter": "Bion Meyer",
-              "bowler": "Sri Sadineni",
+              "bowler": "wd . Sri S",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -142,7 +217,7 @@
             {
               "ball": "0.4",
               "batter": "Bion Meyer",
-              "bowler": "Sri Sadineni",
+              "bowler": "wd . Sri S",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -432,7 +507,7 @@
             {
               "ball": "4.3",
               "batter": "Simeon Kleynhans",
-              "bowler": "Sri Sadineni",
+              "bowler": "wd . Sri S",
               "non_striker": "Bion Meyer",
               "runs": {
                 "batter": 0,
@@ -613,7 +688,7 @@
             {
               "ball": "6.5",
               "batter": "Simeon Kleynhans",
-              "bowler": "Sri Sadineni",
+              "bowler": "lb . Sri S",
               "non_striker": "Bion Meyer",
               "runs": {
                 "batter": 0,
@@ -690,7 +765,7 @@
             {
               "ball": "7.5",
               "batter": "Bion Meyer",
-              "bowler": "Santiago PalaciosFlusk",
+              "bowler": "wd . Santiago P",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -788,9 +863,9 @@
             },
             {
               "ball": "8.6",
-              "batter": "Simeon Kleynhans",
-              "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "batter": null,
+              "bowler": "W . Ezra P",
+              "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -800,7 +875,9 @@
                 {
                   "kind": "caught",
                   "player_out": "Bion Meyer",
-                  "fielders": ["Jordan D"],
+                  "fielders": [
+                    "Jordan D"
+                  ],
                   "bowler": "Ezra P"
                 }
               ]
@@ -812,7 +889,7 @@
           "deliveries": [
             {
               "ball": "9.1",
-              "batter": "Unknown",
+              "batter": "Thomas Brevis",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -825,7 +902,7 @@
               "ball": "9.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -836,7 +913,7 @@
               "ball": "9.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -847,7 +924,7 @@
               "ball": "9.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -858,7 +935,7 @@
               "ball": "9.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -869,7 +946,7 @@
               "ball": "9.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -884,8 +961,8 @@
             {
               "ball": "10.1",
               "batter": "Simeon Kleynhans",
-              "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "bowler": "wd . Ezra P",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -902,7 +979,7 @@
               "ball": "10.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -913,7 +990,7 @@
               "ball": "10.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -924,7 +1001,7 @@
               "ball": "10.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Thomas Brevis",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -934,8 +1011,8 @@
             {
               "ball": "10.4",
               "batter": "Simeon Kleynhans",
-              "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "bowler": "W . Ezra P",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -953,7 +1030,7 @@
               "ball": "10.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -964,7 +1041,7 @@
               "ball": "10.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -978,8 +1055,8 @@
           "deliveries": [
             {
               "ball": "11.1",
-              "batter": "Unknown",
-              "bowler": "Santiago PalaciosFlusk",
+              "batter": "Karel Jan Doyer",
+              "bowler": "wd . Santiago P",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -995,7 +1072,7 @@
             },
             {
               "ball": "11.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1006,7 +1083,7 @@
             },
             {
               "ball": "11.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1017,7 +1094,7 @@
             },
             {
               "ball": "11.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1028,7 +1105,7 @@
             },
             {
               "ball": "11.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1039,7 +1116,7 @@
             },
             {
               "ball": "11.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1050,7 +1127,7 @@
             },
             {
               "ball": "11.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1068,7 +1145,7 @@
               "ball": "12.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1079,7 +1156,7 @@
               "ball": "12.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1088,7 +1165,7 @@
             },
             {
               "ball": "12.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1101,7 +1178,7 @@
               "ball": "12.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1112,7 +1189,7 @@
               "ball": "12.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1123,7 +1200,7 @@
               "ball": "12.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1137,7 +1214,7 @@
           "deliveries": [
             {
               "ball": "13.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1148,7 +1225,7 @@
             },
             {
               "ball": "13.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1159,7 +1236,7 @@
             },
             {
               "ball": "13.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1170,7 +1247,7 @@
             },
             {
               "ball": "13.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1181,7 +1258,7 @@
             },
             {
               "ball": "13.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1192,7 +1269,7 @@
             },
             {
               "ball": "13.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1210,7 +1287,7 @@
               "ball": "14.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1221,7 +1298,7 @@
               "ball": "14.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -1232,7 +1309,7 @@
               "ball": "14.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1243,7 +1320,7 @@
               "ball": "14.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1254,7 +1331,7 @@
               "ball": "14.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1265,7 +1342,7 @@
               "ball": "14.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1281,7 +1358,7 @@
               "ball": "15.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1292,7 +1369,7 @@
               "ball": "15.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1303,7 +1380,7 @@
               "ball": "15.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1314,7 +1391,7 @@
               "ball": "15.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1325,7 +1402,7 @@
               "ball": "15.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1336,7 +1413,7 @@
               "ball": "15.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1350,7 +1427,7 @@
           "deliveries": [
             {
               "ball": "16.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1361,7 +1438,7 @@
             },
             {
               "ball": "16.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1372,7 +1449,7 @@
             },
             {
               "ball": "16.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1383,7 +1460,7 @@
             },
             {
               "ball": "16.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1394,7 +1471,7 @@
             },
             {
               "ball": "16.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1405,7 +1482,7 @@
             },
             {
               "ball": "16.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1423,7 +1500,7 @@
               "ball": "17.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -1434,7 +1511,7 @@
               "ball": "17.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1445,7 +1522,7 @@
               "ball": "17.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -1456,7 +1533,7 @@
               "ball": "17.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1465,7 +1542,7 @@
             },
             {
               "ball": "17.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1476,7 +1553,7 @@
             },
             {
               "ball": "17.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1494,7 +1571,7 @@
               "ball": "18.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1504,8 +1581,8 @@
             {
               "ball": "18.2",
               "batter": "Simeon Kleynhans",
-              "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "bowler": "wd . Ethan M",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 2,
@@ -1522,7 +1599,7 @@
               "ball": "18.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1531,7 +1608,7 @@
             },
             {
               "ball": "18.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1542,7 +1619,7 @@
             },
             {
               "ball": "18.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1554,8 +1631,8 @@
             {
               "ball": "18.5",
               "batter": "Simeon Kleynhans",
-              "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "bowler": "wd . Ethan M",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -1572,7 +1649,7 @@
               "ball": "18.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1581,7 +1658,7 @@
             },
             {
               "ball": "18.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1599,7 +1676,7 @@
               "ball": "19.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1610,7 +1687,7 @@
               "ball": "19.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1621,7 +1698,7 @@
               "ball": "19.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -1632,7 +1709,7 @@
               "ball": "19.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1643,7 +1720,7 @@
               "ball": "19.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1654,7 +1731,7 @@
               "ball": "19.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1668,8 +1745,8 @@
           "deliveries": [
             {
               "ball": "20.1",
-              "batter": "Unknown",
-              "bowler": "Ethan Matjekane",
+              "batter": "Karel Jan Doyer",
+              "bowler": "wd . Ethan M",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -1685,7 +1762,7 @@
             },
             {
               "ball": "20.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ethan Matjekane",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1698,7 +1775,7 @@
               "ball": "20.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -1709,7 +1786,7 @@
               "ball": "20.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1720,7 +1797,7 @@
               "ball": "20.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1731,7 +1808,7 @@
               "ball": "20.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1742,7 +1819,7 @@
               "ball": "20.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Ethan Matjekane",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1756,7 +1833,7 @@
           "deliveries": [
             {
               "ball": "21.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1769,7 +1846,7 @@
               "ball": "21.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1778,7 +1855,7 @@
             },
             {
               "ball": "21.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1789,7 +1866,7 @@
             },
             {
               "ball": "21.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1800,7 +1877,7 @@
             },
             {
               "ball": "21.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1811,7 +1888,7 @@
             },
             {
               "ball": "21.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1829,7 +1906,7 @@
               "ball": "22.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Arshavin Rampersad",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -1846,7 +1923,7 @@
               "ball": "22.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Arshavin Rampersad",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -1857,7 +1934,7 @@
               "ball": "22.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Arshavin Rampersad",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1866,7 +1943,7 @@
             },
             {
               "ball": "22.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Arshavin Rampersad",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1877,7 +1954,7 @@
             },
             {
               "ball": "22.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Arshavin Rampersad",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1890,7 +1967,7 @@
               "ball": "22.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Arshavin Rampersad",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -1901,7 +1978,7 @@
               "ball": "22.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Arshavin Rampersad",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1917,7 +1994,7 @@
               "ball": "23.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -1926,7 +2003,7 @@
             },
             {
               "ball": "23.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Chaitu A",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1937,7 +2014,7 @@
             },
             {
               "ball": "23.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Chaitu A",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1948,7 +2025,7 @@
             },
             {
               "ball": "23.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Chaitu A",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1959,7 +2036,7 @@
             },
             {
               "ball": "23.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Chaitu A",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1970,7 +2047,7 @@
             },
             {
               "ball": "23.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Chaitu A",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -1988,7 +2065,7 @@
               "ball": "24.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Qhayiya Poswa",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -1999,7 +2076,7 @@
               "ball": "24.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Qhayiya Poswa",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -2010,7 +2087,7 @@
               "ball": "24.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Qhayiya Poswa",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2021,7 +2098,7 @@
               "ball": "24.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Qhayiya Poswa",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -2038,7 +2115,7 @@
               "ball": "24.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Qhayiya Poswa",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2047,7 +2124,7 @@
             },
             {
               "ball": "24.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Qhayiya Poswa",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2064,7 +2141,7 @@
             },
             {
               "ball": "24.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Qhayiya Poswa",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2081,7 +2158,7 @@
             },
             {
               "ball": "24.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Qhayiya Poswa",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2092,7 +2169,7 @@
             },
             {
               "ball": "24.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Qhayiya Poswa",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2110,7 +2187,7 @@
               "ball": "25.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2121,7 +2198,7 @@
               "ball": "25.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 2,
@@ -2138,7 +2215,7 @@
               "ball": "25.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -2149,7 +2226,7 @@
               "ball": "25.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2160,7 +2237,7 @@
               "ball": "25.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 6,
                 "extras": 0,
@@ -2171,7 +2248,7 @@
               "ball": "25.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2182,7 +2259,7 @@
               "ball": "25.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2198,7 +2275,7 @@
               "ball": "26.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2209,7 +2286,7 @@
               "ball": "26.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2220,7 +2297,7 @@
               "ball": "26.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2231,7 +2308,7 @@
               "ball": "26.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2242,7 +2319,7 @@
               "ball": "26.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2251,7 +2328,7 @@
             },
             {
               "ball": "26.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Jordan De Smidt",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2269,7 +2346,7 @@
               "ball": "27.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2279,8 +2356,8 @@
             {
               "ball": "27.2",
               "batter": "Simeon Kleynhans",
-              "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "bowler": "wd . Santiago P",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -2297,7 +2374,7 @@
               "ball": "27.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2306,7 +2383,7 @@
             },
             {
               "ball": "27.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2319,7 +2396,7 @@
               "ball": "27.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2330,7 +2407,7 @@
               "ball": "27.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2341,7 +2418,7 @@
               "ball": "27.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2355,8 +2432,8 @@
           "deliveries": [
             {
               "ball": "28.1",
-              "batter": "Unknown",
-              "bowler": "Jordan De Smidt",
+              "batter": "Karel Jan Doyer",
+              "bowler": "wd . Jordan D",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -2372,7 +2449,7 @@
             },
             {
               "ball": "28.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Jordan De Smidt",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2385,7 +2462,7 @@
               "ball": "28.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2395,8 +2472,8 @@
             {
               "ball": "28.3",
               "batter": "Simeon Kleynhans",
-              "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "bowler": "wd . Jordan D",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -2413,7 +2490,7 @@
               "ball": "28.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -2424,7 +2501,7 @@
               "ball": "28.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2433,8 +2510,8 @@
             },
             {
               "ball": "28.5",
-              "batter": "Unknown",
-              "bowler": "Jordan De Smidt",
+              "batter": "Karel Jan Doyer",
+              "bowler": "b . Jordan D",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -2451,8 +2528,8 @@
             {
               "ball": "28.6",
               "batter": "Simeon Kleynhans",
-              "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "bowler": "wd . Jordan D",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -2469,7 +2546,7 @@
               "ball": "28.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2483,7 +2560,7 @@
           "deliveries": [
             {
               "ball": "29.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2494,7 +2571,7 @@
             },
             {
               "ball": "29.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2505,7 +2582,7 @@
             },
             {
               "ball": "29.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2518,7 +2595,7 @@
               "ball": "29.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 6,
                 "extras": 0,
@@ -2529,7 +2606,7 @@
               "ball": "29.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2540,7 +2617,7 @@
               "ball": "29.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2556,7 +2633,7 @@
               "ball": "30.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2567,7 +2644,7 @@
               "ball": "30.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2576,7 +2653,7 @@
             },
             {
               "ball": "30.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Jordan De Smidt",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2587,7 +2664,7 @@
             },
             {
               "ball": "30.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Jordan De Smidt",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2598,7 +2675,7 @@
             },
             {
               "ball": "30.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Jordan De Smidt",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2609,7 +2686,7 @@
             },
             {
               "ball": "30.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Jordan De Smidt",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2626,8 +2703,8 @@
             {
               "ball": "31.1",
               "batter": "Simeon Kleynhans",
-              "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "bowler": "wd . Santiago P",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 2,
@@ -2644,7 +2721,7 @@
               "ball": "31.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2655,7 +2732,7 @@
               "ball": "31.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2666,7 +2743,7 @@
               "ball": "31.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2677,7 +2754,7 @@
               "ball": "31.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2688,7 +2765,7 @@
               "ball": "31.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -2697,7 +2774,7 @@
             },
             {
               "ball": "31.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2715,7 +2792,7 @@
               "ball": "32.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2726,7 +2803,7 @@
               "ball": "32.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2737,7 +2814,7 @@
               "ball": "32.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2748,7 +2825,7 @@
               "ball": "32.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -2759,7 +2836,7 @@
               "ball": "32.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2770,7 +2847,7 @@
               "ball": "32.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Jordan De Smidt",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -2784,8 +2861,8 @@
           "deliveries": [
             {
               "ball": "33.1",
-              "batter": "Unknown",
-              "bowler": "Santiago PalaciosFlusk",
+              "batter": "Karel Jan Doyer",
+              "bowler": "wd . Santiago P",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -2801,7 +2878,7 @@
             },
             {
               "ball": "33.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Santiago PalaciosFlusk",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2814,7 +2891,7 @@
               "ball": "33.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2825,7 +2902,7 @@
               "ball": "33.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2835,8 +2912,8 @@
             {
               "ball": "33.4",
               "batter": "Simeon Kleynhans",
-              "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "bowler": "b . Santiago P",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 2,
@@ -2853,7 +2930,7 @@
               "ball": "33.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2863,8 +2940,8 @@
             {
               "ball": "33.6",
               "batter": "Simeon Kleynhans",
-              "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "bowler": "wd . Santiago P",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -2881,7 +2958,7 @@
               "ball": "33.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Santiago PalaciosFlusk",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2895,7 +2972,7 @@
           "deliveries": [
             {
               "ball": "34.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2906,7 +2983,7 @@
             },
             {
               "ball": "34.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2919,7 +2996,7 @@
               "ball": "34.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2930,7 +3007,7 @@
               "ball": "34.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2941,7 +3018,7 @@
               "ball": "34.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2952,7 +3029,7 @@
               "ball": "34.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -2966,8 +3043,8 @@
           "deliveries": [
             {
               "ball": "35.1",
-              "batter": "Unknown",
-              "bowler": "Sean Rowles",
+              "batter": "Karel Jan Doyer",
+              "bowler": "wd . Sean R",
               "non_striker": "Simeon Kleynhans",
               "runs": {
                 "batter": 0,
@@ -2983,7 +3060,7 @@
             },
             {
               "ball": "35.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -2994,7 +3071,7 @@
             },
             {
               "ball": "35.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3005,7 +3082,7 @@
             },
             {
               "ball": "35.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3016,7 +3093,7 @@
             },
             {
               "ball": "35.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3027,7 +3104,7 @@
             },
             {
               "ball": "35.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3038,7 +3115,7 @@
             },
             {
               "ball": "35.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3054,7 +3131,7 @@
           "deliveries": [
             {
               "ball": "36.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3065,7 +3142,7 @@
             },
             {
               "ball": "36.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3076,7 +3153,7 @@
             },
             {
               "ball": "36.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3087,7 +3164,7 @@
             },
             {
               "ball": "36.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3098,7 +3175,7 @@
             },
             {
               "ball": "36.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3109,7 +3186,7 @@
             },
             {
               "ball": "36.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3127,7 +3204,7 @@
               "ball": "37.1",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3138,7 +3215,7 @@
               "ball": "37.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3149,7 +3226,7 @@
               "ball": "37.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3160,7 +3237,7 @@
               "ball": "37.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3171,7 +3248,7 @@
               "ball": "37.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3182,7 +3259,7 @@
               "ball": "37.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3196,7 +3273,7 @@
           "deliveries": [
             {
               "ball": "38.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3207,7 +3284,7 @@
             },
             {
               "ball": "38.2",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Ezra Pillay",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3220,7 +3297,7 @@
               "ball": "38.3",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3231,7 +3308,7 @@
               "ball": "38.4",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3242,7 +3319,7 @@
               "ball": "38.5",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3253,7 +3330,7 @@
               "ball": "38.6",
               "batter": "Simeon Kleynhans",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3267,7 +3344,7 @@
           "deliveries": [
             {
               "ball": "39.1",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
               "non_striker": "Simeon Kleynhans",
               "runs": {
@@ -3280,7 +3357,7 @@
               "ball": "39.2",
               "batter": "Simeon Kleynhans",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3289,9 +3366,9 @@
             },
             {
               "ball": "39.3",
-              "batter": "Karel Jan Doyer",
+              "batter": null,
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3301,15 +3378,18 @@
                 {
                   "kind": "run out",
                   "player_out": "Simeon Kleynhans",
-                  "fielders": ["Sean R", "Chaitu A"]
+                  "fielders": [
+                    "Sean R",
+                    "Chaitu A"
+                  ]
                 }
               ]
             },
             {
               "ball": "39.4",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3318,9 +3398,9 @@
             },
             {
               "ball": "39.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3329,9 +3409,9 @@
             },
             {
               "ball": "39.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3345,9 +3425,9 @@
           "deliveries": [
             {
               "ball": "40.1",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3356,9 +3436,9 @@
             },
             {
               "ball": "40.2",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3367,9 +3447,9 @@
             },
             {
               "ball": "40.3",
-              "batter": "Karel Jan Doyer",
-              "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "batter": "Aidan Hough",
+              "bowler": "wd . Sri S",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -3384,9 +3464,9 @@
             },
             {
               "ball": "40.3",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3395,9 +3475,9 @@
             },
             {
               "ball": "40.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sri Sadineni",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3406,9 +3486,9 @@
             },
             {
               "ball": "40.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sri Sadineni",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3417,9 +3497,9 @@
             },
             {
               "ball": "40.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sri Sadineni",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3433,9 +3513,9 @@
           "deliveries": [
             {
               "ball": "41.1",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3444,9 +3524,9 @@
             },
             {
               "ball": "41.2",
-              "batter": "Karel Jan Doyer",
-              "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "batter": "Aidan Hough",
+              "bowler": "wd . Sean R",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -3461,9 +3541,9 @@
             },
             {
               "ball": "41.2",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3472,9 +3552,9 @@
             },
             {
               "ball": "41.3",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3483,9 +3563,9 @@
             },
             {
               "ball": "41.4",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sean Rowles",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Aidan Hough",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3494,9 +3574,9 @@
             },
             {
               "ball": "41.5",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3505,9 +3585,9 @@
             },
             {
               "ball": "41.6",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3521,9 +3601,9 @@
           "deliveries": [
             {
               "ball": "42.1",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3532,9 +3612,9 @@
             },
             {
               "ball": "42.2",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3543,9 +3623,9 @@
             },
             {
               "ball": "42.3",
-              "batter": "Karel Jan Doyer",
+              "batter": "Aidan Hough",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Karel Jan Doyer",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3554,9 +3634,9 @@
             },
             {
               "ball": "42.4",
-              "batter": "Unknown",
-              "bowler": "Sri Sadineni",
-              "non_striker": "Karel Jan Doyer",
+              "batter": "Karel Jan Doyer",
+              "bowler": "W . Sri S",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3572,9 +3652,9 @@
             },
             {
               "ball": "42.5",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sri Sadineni",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Bhavish Saini",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3583,9 +3663,9 @@
             },
             {
               "ball": "42.6",
-              "batter": "Unknown",
+              "batter": "Karel Jan Doyer",
               "bowler": "Sri Sadineni",
-              "non_striker": "Karel Jan Doyer",
+              "non_striker": "Bhavish Saini",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3601,7 +3681,7 @@
               "ball": "43.1",
               "batter": "Bhavish Saini",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3619,7 +3699,7 @@
               "ball": "43.2",
               "batter": "Bhavish Saini",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3630,7 +3710,7 @@
               "ball": "43.3",
               "batter": "Bhavish Saini",
               "bowler": "Sean Rowles",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3639,7 +3719,7 @@
             },
             {
               "ball": "43.4",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Sean Rowles",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3650,8 +3730,8 @@
             },
             {
               "ball": "43.5",
-              "batter": "Unknown",
-              "bowler": "Sean Rowles",
+              "batter": "Derick Nelson",
+              "bowler": "wd . Sean R",
               "non_striker": "Bhavish Saini",
               "runs": {
                 "batter": 0,
@@ -3667,7 +3747,7 @@
             },
             {
               "ball": "43.5",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Sean Rowles",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3678,7 +3758,7 @@
             },
             {
               "ball": "43.6",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Sean Rowles",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3696,7 +3776,7 @@
               "ball": "44.1",
               "batter": "Bhavish Saini",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3707,7 +3787,7 @@
               "ball": "44.2",
               "batter": "Bhavish Saini",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3718,7 +3798,7 @@
               "ball": "44.3",
               "batter": "Bhavish Saini",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3727,7 +3807,7 @@
             },
             {
               "ball": "44.4",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Sri Sadineni",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3738,7 +3818,7 @@
             },
             {
               "ball": "44.5",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Sri Sadineni",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3749,7 +3829,7 @@
             },
             {
               "ball": "44.6",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Sri Sadineni",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3767,7 +3847,7 @@
               "ball": "45.1",
               "batter": "Bhavish Saini",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 6,
                 "extras": 0,
@@ -3778,7 +3858,7 @@
               "ball": "45.2",
               "batter": "Bhavish Saini",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3789,7 +3869,7 @@
               "ball": "45.3",
               "batter": "Bhavish Saini",
               "bowler": "Chaitu A",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3798,7 +3878,7 @@
             },
             {
               "ball": "45.4",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Chaitu A",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3809,7 +3889,7 @@
             },
             {
               "ball": "45.5",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Chaitu A",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3820,7 +3900,7 @@
             },
             {
               "ball": "45.6",
-              "batter": "Unknown",
+              "batter": "Derick Nelson",
               "bowler": "Chaitu A",
               "non_striker": "Bhavish Saini",
               "runs": {
@@ -3838,7 +3918,7 @@
               "ball": "46.1",
               "batter": "Bhavish Saini",
               "bowler": "Ty P",
-              "non_striker": "Unknown",
+              "non_striker": "Derick Nelson",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -3848,8 +3928,8 @@
             {
               "ball": "46.2",
               "batter": "Bhavish Saini",
-              "bowler": "Ty P",
-              "non_striker": "Unknown",
+              "bowler": "W . Ty P",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3859,16 +3939,18 @@
                 {
                   "kind": "caught",
                   "player_out": "Derick Nelson",
-                  "fielders": ["Sean R"],
+                  "fielders": [
+                    "Sean R"
+                  ],
                   "bowler": "Ty P"
                 }
               ]
             },
             {
               "ball": "46.3",
-              "batter": "Tyler Mncube",
-              "bowler": "Ty P",
-              "non_striker": "Unknown",
+              "batter": null,
+              "bowler": "W . Ty P",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3878,15 +3960,17 @@
                 {
                   "kind": "run out",
                   "player_out": "Bhavish Saini",
-                  "fielders": ["Ty P"]
+                  "fielders": [
+                    "Ty P"
+                  ]
                 }
               ]
             },
             {
               "ball": "46.4",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ty P",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3895,9 +3979,9 @@
             },
             {
               "ball": "46.5",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ty P",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -3906,9 +3990,9 @@
             },
             {
               "ball": "46.6",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Ty P",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3922,9 +4006,9 @@
           "deliveries": [
             {
               "ball": "47.1",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3933,9 +4017,9 @@
             },
             {
               "ball": "47.2",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3944,9 +4028,9 @@
             },
             {
               "ball": "47.3",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3955,9 +4039,9 @@
             },
             {
               "ball": "47.4",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -3966,9 +4050,9 @@
             },
             {
               "ball": "47.5",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3977,9 +4061,9 @@
             },
             {
               "ball": "47.6",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Ezra Pillay",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -3993,9 +4077,9 @@
           "deliveries": [
             {
               "ball": "48.1",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Ty P",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4004,9 +4088,9 @@
             },
             {
               "ball": "48.2",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Ty P",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4015,9 +4099,9 @@
             },
             {
               "ball": "48.3",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Ty P",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4026,9 +4110,9 @@
             },
             {
               "ball": "48.4",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Ty P",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -4037,9 +4121,9 @@
             },
             {
               "ball": "48.5",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Ty P",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4048,9 +4132,9 @@
             },
             {
               "ball": "48.6",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Ty P",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Nkululeko Yede",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4064,9 +4148,9 @@
           "deliveries": [
             {
               "ball": "49.1",
-              "batter": "Tyler Mncube",
+              "batter": "Nkululeko Yede",
               "bowler": "Sri Sadineni",
-              "non_striker": "Unknown",
+              "non_striker": "Tyler Mncube",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -4075,9 +4159,9 @@
             },
             {
               "ball": "49.2",
-              "batter": "Unknown",
-              "bowler": "Sri Sadineni",
-              "non_striker": "Tyler Mncube",
+              "batter": "Tyler Mncube",
+              "bowler": "W . Sri S",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4093,9 +4177,9 @@
             },
             {
               "ball": "49.3",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Sri Sadineni",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Ulrich Van Der Merwe",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4104,9 +4188,9 @@
             },
             {
               "ball": "49.4",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Sri Sadineni",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Ulrich Van Der Merwe",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4115,9 +4199,9 @@
             },
             {
               "ball": "49.5",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Sri Sadineni",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Ulrich Van Der Merwe",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -4126,9 +4210,9 @@
             },
             {
               "ball": "49.6",
-              "batter": "Unknown",
+              "batter": "Tyler Mncube",
               "bowler": "Sri Sadineni",
-              "non_striker": "Tyler Mncube",
+              "non_striker": "Ulrich Van Der Merwe",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -4219,7 +4303,7 @@
             {
               "ball": "1.1",
               "batter": "Jordan De Smidt",
-              "bowler": "Simeon Kleynhans",
+              "bowler": "wd . Simeon K",
               "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
@@ -4236,7 +4320,7 @@
             {
               "ball": "1.1",
               "batter": "Jordan De Smidt",
-              "bowler": "Simeon Kleynhans",
+              "bowler": "wd . Simeon K",
               "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
@@ -4264,7 +4348,7 @@
             {
               "ball": "1.2",
               "batter": "Arshavin Rampersad",
-              "bowler": "Simeon Kleynhans",
+              "bowler": "wd . Simeon K",
               "non_striker": "Jordan De Smidt",
               "runs": {
                 "batter": 0,
@@ -4527,7 +4611,7 @@
             {
               "ball": "4.5",
               "batter": "Jordan De Smidt",
-              "bowler": "Frederik Du Plessis",
+              "bowler": "wd . Frederik D",
               "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
@@ -4582,7 +4666,7 @@
             {
               "ball": "5.2",
               "batter": "Arshavin Rampersad",
-              "bowler": "Tyler Mncube",
+              "bowler": "wd . Tyler M",
               "non_striker": "Jordan De Smidt",
               "runs": {
                 "batter": 0,
@@ -4703,7 +4787,7 @@
             {
               "ball": "6.5",
               "batter": "Jordan De Smidt",
-              "bowler": "Frederik Du Plessis",
+              "bowler": "wd . Frederik D",
               "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
@@ -5203,7 +5287,7 @@
             {
               "ball": "12.4",
               "batter": "Jordan De Smidt",
-              "bowler": "Ulrich Van Der Merwe",
+              "bowler": "wd . Ulrich V",
               "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
@@ -5220,7 +5304,7 @@
             {
               "ball": "12.4",
               "batter": "Jordan De Smidt",
-              "bowler": "Ulrich Van Der Merwe",
+              "bowler": "wd . Ulrich V",
               "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
@@ -5275,7 +5359,7 @@
             {
               "ball": "13.1",
               "batter": "Arshavin Rampersad",
-              "bowler": "Lesedi M",
+              "bowler": "wd . Lesedi M",
               "non_striker": "Jordan De Smidt",
               "runs": {
                 "batter": 0,
@@ -5434,7 +5518,7 @@
             {
               "ball": "15.1",
               "batter": "Jordan De Smidt",
-              "bowler": "Lesedi M",
+              "bowler": "wd . Lesedi M",
               "non_striker": "Arshavin Rampersad",
               "runs": {
                 "batter": 0,
@@ -5523,7 +5607,7 @@
               "ball": "16.1",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5541,7 +5625,7 @@
               "ball": "16.2",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -5552,7 +5636,7 @@
               "ball": "16.3",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5563,7 +5647,7 @@
               "ball": "16.4",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5574,7 +5658,7 @@
               "ball": "16.5",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5585,7 +5669,7 @@
               "ball": "16.6",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5599,7 +5683,7 @@
           "deliveries": [
             {
               "ball": "17.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5610,7 +5694,7 @@
             },
             {
               "ball": "17.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5621,7 +5705,7 @@
             },
             {
               "ball": "17.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5632,7 +5716,7 @@
             },
             {
               "ball": "17.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5645,7 +5729,7 @@
               "ball": "17.5",
               "batter": "Jordan De Smidt",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5656,7 +5740,7 @@
               "ball": "17.6",
               "batter": "Jordan De Smidt",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -5673,7 +5757,7 @@
               "ball": "17.6",
               "batter": "Jordan De Smidt",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5687,8 +5771,8 @@
           "deliveries": [
             {
               "ball": "18.1",
-              "batter": "Arshavin Rampersad",
-              "bowler": "Ulrich Van Der Merwe",
+              "batter": "Qhayiya Poswa",
+              "bowler": "wd . Ulrich V",
               "non_striker": "Jordan De Smidt",
               "runs": {
                 "batter": 0,
@@ -5704,7 +5788,7 @@
             },
             {
               "ball": "18.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5717,7 +5801,7 @@
               "ball": "18.2",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5728,7 +5812,7 @@
               "ball": "18.3",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5739,7 +5823,7 @@
               "ball": "18.4",
               "batter": "Jordan De Smidt",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -5748,7 +5832,7 @@
             },
             {
               "ball": "18.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5759,7 +5843,7 @@
             },
             {
               "ball": "18.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Ulrich Van Der Merwe",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5775,7 +5859,7 @@
           "deliveries": [
             {
               "ball": "19.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5786,7 +5870,7 @@
             },
             {
               "ball": "19.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Bhavish Saini",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5799,7 +5883,7 @@
               "ball": "19.3",
               "batter": "Jordan De Smidt",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -5810,7 +5894,7 @@
               "ball": "19.4",
               "batter": "Jordan De Smidt",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5821,7 +5905,7 @@
               "ball": "19.5",
               "batter": "Jordan De Smidt",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -5832,7 +5916,7 @@
               "ball": "19.6",
               "batter": "Jordan De Smidt",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -5848,7 +5932,7 @@
               "ball": "20.1",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5859,7 +5943,7 @@
               "ball": "20.2",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5870,7 +5954,7 @@
               "ball": "20.3",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5881,7 +5965,7 @@
               "ball": "20.4",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -5892,7 +5976,7 @@
               "ball": "20.5",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -5901,7 +5985,7 @@
             },
             {
               "ball": "20.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5919,7 +6003,7 @@
               "ball": "21.1",
               "batter": "Jordan De Smidt",
               "bowler": "Simeon Kleynhans",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -5930,7 +6014,7 @@
               "ball": "21.2",
               "batter": "Jordan De Smidt",
               "bowler": "Simeon Kleynhans",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -5941,7 +6025,7 @@
               "ball": "21.3",
               "batter": "Jordan De Smidt",
               "bowler": "Simeon Kleynhans",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -5950,7 +6034,7 @@
             },
             {
               "ball": "21.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5961,7 +6045,7 @@
             },
             {
               "ball": "21.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5972,7 +6056,7 @@
             },
             {
               "ball": "21.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -5988,7 +6072,7 @@
           "deliveries": [
             {
               "ball": "22.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6001,7 +6085,7 @@
               "ball": "22.2",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6012,7 +6096,7 @@
               "ball": "22.3",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6023,7 +6107,7 @@
               "ball": "22.4",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6034,7 +6118,7 @@
               "ball": "22.5",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6043,7 +6127,7 @@
             },
             {
               "ball": "22.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6059,7 +6143,7 @@
           "deliveries": [
             {
               "ball": "23.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6070,8 +6154,8 @@
             },
             {
               "ball": "23.2",
-              "batter": "Arshavin Rampersad",
-              "bowler": "Simeon Kleynhans",
+              "batter": "Qhayiya Poswa",
+              "bowler": "wd . Simeon K",
               "non_striker": "Jordan De Smidt",
               "runs": {
                 "batter": 0,
@@ -6087,7 +6171,7 @@
             },
             {
               "ball": "23.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6098,7 +6182,7 @@
             },
             {
               "ball": "23.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6109,8 +6193,8 @@
             },
             {
               "ball": "23.4",
-              "batter": "Arshavin Rampersad",
-              "bowler": "Simeon Kleynhans",
+              "batter": "Qhayiya Poswa",
+              "bowler": "wd . Simeon K",
               "non_striker": "Jordan De Smidt",
               "runs": {
                 "batter": 0,
@@ -6126,7 +6210,7 @@
             },
             {
               "ball": "23.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6137,7 +6221,7 @@
             },
             {
               "ball": "23.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6148,7 +6232,7 @@
             },
             {
               "ball": "23.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Simeon Kleynhans",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6166,7 +6250,7 @@
               "ball": "24.1",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6177,7 +6261,7 @@
               "ball": "24.2",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6188,7 +6272,7 @@
               "ball": "24.3",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6199,7 +6283,7 @@
               "ball": "24.4",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6210,7 +6294,7 @@
               "ball": "24.5",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6221,7 +6305,7 @@
               "ball": "24.6",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6235,7 +6319,7 @@
           "deliveries": [
             {
               "ball": "25.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6246,7 +6330,7 @@
             },
             {
               "ball": "25.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6257,7 +6341,7 @@
             },
             {
               "ball": "25.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6268,7 +6352,7 @@
             },
             {
               "ball": "25.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6279,7 +6363,7 @@
             },
             {
               "ball": "25.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6290,7 +6374,7 @@
             },
             {
               "ball": "25.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6306,7 +6390,7 @@
           "deliveries": [
             {
               "ball": "26.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6319,7 +6403,7 @@
               "ball": "26.2",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6328,7 +6412,7 @@
             },
             {
               "ball": "26.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6339,7 +6423,7 @@
             },
             {
               "ball": "26.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6350,7 +6434,7 @@
             },
             {
               "ball": "26.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6361,7 +6445,7 @@
             },
             {
               "ball": "26.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6377,7 +6461,7 @@
           "deliveries": [
             {
               "ball": "27.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6388,7 +6472,7 @@
             },
             {
               "ball": "27.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6399,7 +6483,7 @@
             },
             {
               "ball": "27.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6410,7 +6494,7 @@
             },
             {
               "ball": "27.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Tyler Mncube",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6423,7 +6507,7 @@
               "ball": "27.5",
               "batter": "Jordan De Smidt",
               "bowler": "Tyler Mncube",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6434,7 +6518,7 @@
               "ball": "27.6",
               "batter": "Jordan De Smidt",
               "bowler": "Tyler Mncube",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6448,7 +6532,7 @@
           "deliveries": [
             {
               "ball": "28.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Derick Nelson",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6461,7 +6545,7 @@
               "ball": "28.2",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6472,7 +6556,7 @@
               "ball": "28.3",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -6489,7 +6573,7 @@
               "ball": "28.3",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6500,7 +6584,7 @@
               "ball": "28.4",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6511,7 +6595,7 @@
               "ball": "28.5",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6522,7 +6606,7 @@
               "ball": "28.6",
               "batter": "Jordan De Smidt",
               "bowler": "Derick Nelson",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6538,7 +6622,7 @@
               "ball": "29.1",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6549,7 +6633,7 @@
               "ball": "29.2",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -6566,7 +6650,7 @@
               "ball": "29.2",
               "batter": "Jordan De Smidt",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6575,7 +6659,7 @@
             },
             {
               "ball": "29.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
               "non_striker": "Jordan De Smidt",
               "runs": {
@@ -6586,9 +6670,9 @@
             },
             {
               "ball": "29.4",
-              "batter": "Qhayiya Poswa",
+              "batter": null,
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6598,16 +6682,18 @@
                 {
                   "kind": "caught",
                   "player_out": "Jordan De Smidt",
-                  "fielders": ["Derick N"],
+                  "fielders": [
+                    "Derick N"
+                  ],
                   "bowler": "Thomas B"
                 }
               ]
             },
             {
               "ball": "29.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Sean Rowles",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6616,9 +6702,9 @@
             },
             {
               "ball": "29.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Sean Rowles",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6632,9 +6718,9 @@
           "deliveries": [
             {
               "ball": "30.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6643,9 +6729,9 @@
             },
             {
               "ball": "30.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6654,9 +6740,9 @@
             },
             {
               "ball": "30.3",
-              "batter": "Arshavin Rampersad",
-              "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "batter": "Qhayiya Poswa",
+              "bowler": "wd . Frederik D",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -6671,9 +6757,9 @@
             },
             {
               "ball": "30.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6682,9 +6768,9 @@
             },
             {
               "ball": "30.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6693,9 +6779,9 @@
             },
             {
               "ball": "30.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6704,9 +6790,9 @@
             },
             {
               "ball": "30.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6720,9 +6806,9 @@
           "deliveries": [
             {
               "ball": "31.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Sean Rowles",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6731,9 +6817,9 @@
             },
             {
               "ball": "31.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Sean Rowles",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Qhayiya Poswa",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6742,9 +6828,9 @@
             },
             {
               "ball": "31.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6753,9 +6839,9 @@
             },
             {
               "ball": "31.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6764,9 +6850,9 @@
             },
             {
               "ball": "31.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Qhayiya Poswa",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6775,9 +6861,9 @@
             },
             {
               "ball": "31.6",
-              "batter": "Arshavin Rampersad",
+              "batter": null,
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sean Rowles",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6787,7 +6873,9 @@
                 {
                   "kind": "caught",
                   "player_out": "Qhayiya Poswa",
-                  "fielders": ["Simeon K"],
+                  "fielders": [
+                    "Simeon K"
+                  ],
                   "bowler": "Thomas B"
                 }
               ]
@@ -6799,9 +6887,9 @@
           "deliveries": [
             {
               "ball": "32.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Caleb Allan",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6810,9 +6898,9 @@
             },
             {
               "ball": "32.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Caleb Allan",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6821,9 +6909,9 @@
             },
             {
               "ball": "32.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Caleb Allan",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6832,9 +6920,9 @@
             },
             {
               "ball": "32.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Caleb Allan",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6843,9 +6931,9 @@
             },
             {
               "ball": "32.5",
-              "batter": "Qhayiya Poswa",
+              "batter": null,
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6861,9 +6949,9 @@
             },
             {
               "ball": "32.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Sri Sadineni",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -6877,9 +6965,9 @@
           "deliveries": [
             {
               "ball": "33.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6888,9 +6976,9 @@
             },
             {
               "ball": "33.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Sri Sadineni",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6900,15 +6988,17 @@
                 {
                   "kind": "run out",
                   "player_out": "Sean Rowles",
-                  "fielders": ["Tyler M"]
+                  "fielders": [
+                    "Tyler M"
+                  ]
                 }
               ]
             },
             {
               "ball": "33.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6917,9 +7007,9 @@
             },
             {
               "ball": "33.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6928,9 +7018,9 @@
             },
             {
               "ball": "33.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6939,9 +7029,9 @@
             },
             {
               "ball": "33.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6955,9 +7045,9 @@
           "deliveries": [
             {
               "ball": "34.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6966,9 +7056,9 @@
             },
             {
               "ball": "34.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6977,9 +7067,9 @@
             },
             {
               "ball": "34.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -6988,9 +7078,9 @@
             },
             {
               "ball": "34.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -6999,9 +7089,9 @@
             },
             {
               "ball": "34.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7010,9 +7100,9 @@
             },
             {
               "ball": "34.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7026,9 +7116,9 @@
           "deliveries": [
             {
               "ball": "35.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7043,9 +7133,9 @@
             },
             {
               "ball": "35.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7054,9 +7144,9 @@
             },
             {
               "ball": "35.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Thomas Brevis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7065,9 +7155,9 @@
             },
             {
               "ball": "35.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7076,9 +7166,9 @@
             },
             {
               "ball": "35.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7087,9 +7177,9 @@
             },
             {
               "ball": "35.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7098,9 +7188,9 @@
             },
             {
               "ball": "35.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7115,9 +7205,9 @@
             },
             {
               "ball": "35.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Thomas Brevis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7131,9 +7221,9 @@
           "deliveries": [
             {
               "ball": "36.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7142,9 +7232,9 @@
             },
             {
               "ball": "36.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7153,9 +7243,9 @@
             },
             {
               "ball": "36.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7164,9 +7254,9 @@
             },
             {
               "ball": "36.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7175,9 +7265,9 @@
             },
             {
               "ball": "36.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7186,9 +7276,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Qhayiya Poswa",
-              "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "batter": "Hamzah Akabor",
+              "bowler": "wd . Frederik D",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7203,9 +7293,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Qhayiya Poswa",
-              "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "batter": "Hamzah Akabor",
+              "bowler": "wd . Frederik D",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7220,9 +7310,9 @@
             },
             {
               "ball": "36.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7236,9 +7326,9 @@
           "deliveries": [
             {
               "ball": "37.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7247,9 +7337,9 @@
             },
             {
               "ball": "37.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7258,9 +7348,9 @@
             },
             {
               "ball": "37.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7269,9 +7359,9 @@
             },
             {
               "ball": "37.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7280,9 +7370,9 @@
             },
             {
               "ball": "37.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7291,9 +7381,9 @@
             },
             {
               "ball": "37.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7308,9 +7398,9 @@
             },
             {
               "ball": "37.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7324,9 +7414,9 @@
           "deliveries": [
             {
               "ball": "38.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7335,9 +7425,9 @@
             },
             {
               "ball": "38.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7346,9 +7436,9 @@
             },
             {
               "ball": "38.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7357,9 +7447,9 @@
             },
             {
               "ball": "38.4",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7368,9 +7458,9 @@
             },
             {
               "ball": "38.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 4,
                 "extras": 0,
@@ -7379,9 +7469,9 @@
             },
             {
               "ball": "38.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Frederik Du Plessis",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7395,9 +7485,9 @@
           "deliveries": [
             {
               "ball": "39.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7406,9 +7496,9 @@
             },
             {
               "ball": "39.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7417,9 +7507,9 @@
             },
             {
               "ball": "39.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7428,9 +7518,9 @@
             },
             {
               "ball": "39.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7439,9 +7529,9 @@
             },
             {
               "ball": "39.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7450,9 +7540,9 @@
             },
             {
               "ball": "39.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7466,9 +7556,9 @@
           "deliveries": [
             {
               "ball": "40.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Unknown",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7477,9 +7567,9 @@
             },
             {
               "ball": "40.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7488,9 +7578,9 @@
             },
             {
               "ball": "40.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7499,9 +7589,9 @@
             },
             {
               "ball": "40.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Unknown",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7511,16 +7601,18 @@
                 {
                   "kind": "caught",
                   "player_out": "Sri Sadineni",
-                  "fielders": ["Lesedi M"],
+                  "fielders": [
+                    "Lesedi M"
+                  ],
                   "bowler": "Ulrich V"
                 }
               ]
             },
             {
               "ball": "40.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ethan Matjekane",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7529,9 +7621,9 @@
             },
             {
               "ball": "40.6",
-              "batter": "Qhayiya Poswa",
-              "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "batter": "Hamzah Akabor",
+              "bowler": "wd . Ulrich V",
+              "non_striker": "Ethan Matjekane",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7546,9 +7638,9 @@
             },
             {
               "ball": "40.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ethan Matjekane",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7562,9 +7654,9 @@
           "deliveries": [
             {
               "ball": "41.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ethan Matjekane",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7573,9 +7665,9 @@
             },
             {
               "ball": "41.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7585,16 +7677,18 @@
                 {
                   "kind": "stumped",
                   "player_out": "Ethan Matjekane",
-                  "fielders": ["Karel J"],
+                  "fielders": [
+                    "Karel J"
+                  ],
                   "bowler": "Bhavish S"
                 }
               ]
             },
             {
               "ball": "41.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ezra Pillay",
               "runs": {
                 "batter": 0,
                 "extras": 1,
@@ -7609,9 +7703,9 @@
             },
             {
               "ball": "41.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ezra Pillay",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7620,9 +7714,9 @@
             },
             {
               "ball": "41.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ezra Pillay",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7631,9 +7725,9 @@
             },
             {
               "ball": "41.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Ezra Pillay",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7642,9 +7736,9 @@
             },
             {
               "ball": "41.6",
-              "batter": "Arshavin Rampersad",
+              "batter": "Ezra Pillay",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7658,9 +7752,9 @@
           "deliveries": [
             {
               "ball": "42.1",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ezra Pillay",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7669,9 +7763,9 @@
             },
             {
               "ball": "42.2",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Ezra Pillay",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7680,9 +7774,9 @@
             },
             {
               "ball": "42.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7692,16 +7786,18 @@
                 {
                   "kind": "caught",
                   "player_out": "Ezra Pillay",
-                  "fielders": ["Derick N"],
+                  "fielders": [
+                    "Derick N"
+                  ],
                   "bowler": "Ulrich V"
                 }
               ]
             },
             {
               "ball": "42.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7710,9 +7806,9 @@
             },
             {
               "ball": "42.5",
-              "batter": "Arshavin Rampersad",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7721,9 +7817,9 @@
             },
             {
               "ball": "42.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7737,9 +7833,9 @@
           "deliveries": [
             {
               "ball": "43.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7748,9 +7844,9 @@
             },
             {
               "ball": "43.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Bhavish Saini",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Hamzah Akabor",
               "runs": {
                 "batter": 1,
                 "extras": 0,
@@ -7759,9 +7855,9 @@
             },
             {
               "ball": "43.3",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7770,9 +7866,9 @@
             },
             {
               "ball": "43.4",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7781,9 +7877,9 @@
             },
             {
               "ball": "43.5",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7792,9 +7888,9 @@
             },
             {
               "ball": "43.6",
-              "batter": "Qhayiya Poswa",
+              "batter": "Hamzah Akabor",
               "bowler": "Bhavish Saini",
-              "non_striker": "Arshavin Rampersad",
+              "non_striker": "Santiago PalaciosFlusk",
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7808,9 +7904,9 @@
           "deliveries": [
             {
               "ball": "44.1",
-              "batter": "Arshavin Rampersad",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7820,16 +7916,18 @@
                 {
                   "kind": "caught",
                   "player_out": "Hamzah Akabor",
-                  "fielders": ["Thomas B"],
+                  "fielders": [
+                    "Thomas B"
+                  ],
                   "bowler": "Ulrich V"
                 }
               ]
             },
             {
               "ball": "44.2",
-              "batter": "Arshavin Rampersad",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": "Chaitu A",
               "runs": {
                 "batter": 2,
                 "extras": 0,
@@ -7838,9 +7936,9 @@
             },
             {
               "ball": "44.3",
-              "batter": "Arshavin Rampersad",
+              "batter": "Santiago PalaciosFlusk",
               "bowler": "Ulrich Van Der Merwe",
-              "non_striker": "Qhayiya Poswa",
+              "non_striker": null,
               "runs": {
                 "batter": 0,
                 "extras": 0,
@@ -7850,7 +7948,9 @@
                 {
                   "kind": "caught",
                   "player_out": "Chaitu A",
-                  "fielders": ["Frederik D"],
+                  "fielders": [
+                    "Frederik D"
+                  ],
                   "bowler": "Ulrich V"
                 }
               ]
